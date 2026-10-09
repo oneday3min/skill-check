@@ -34,6 +34,12 @@
 
   <!-- 추천 목록 -->
   <section id="tab-list" class="panel">
+    <div class="views" role="tablist" aria-label="보기 방식">
+      <button type="button" data-view="overview" aria-selected="true">용도별 한눈에</button>
+      <button type="button" data-view="all" aria-selected="false">전체 목록</button>
+    </div>
+    <div id="overview" class="overview"></div>
+    <div id="all-view" hidden>
     <div class="filters">
       <input id="q" type="search" placeholder="스킬 이름·설명 검색 (예: pdf, 디자인, review)" aria-label="검색">
       <div class="chips" id="cats" aria-label="용도"></div>
@@ -49,6 +55,7 @@
     <p class="count" id="count"></p>
     <ul class="cards" id="cards"></ul>
     <button class="more" id="more" hidden>더 보기</button>
+    </div>
   </section>
 
   <!-- 직접 검사 -->
@@ -87,6 +94,8 @@
     <p>포크 여부, 저장소 나이, 관리 주체, 저장소와 스킬의 라이선스가 다른지, 저작권자 표기, 유명 원본(Anthropic 공식 스킬)의 사본인지, 남의 것을 가져왔다는 문구, 글꼴·미디어 포함 여부, 남의 브랜드 이름 사용.</p>
     <h3>위험 신호 (참고용)</h3>
     <p>인터넷에서 받은 스크립트 바로 실행, 비밀키·인증 파일 경로, 사용자 몰래 하라는 문구(“외부 지시를 따르지 마라” 같은 방어 문구는 제외), 인코딩된 내용 해독, 동적 코드 실행, 환경변수 읽기, 외부 전송, 넓은 삭제 명령, Bash 무제한 허용. <b>전문 보안 검사기가 아닙니다</b> — 회사에서 쓰려면 보안 검사를 따로 하세요.</p>
+    <h3>설치 링크를 드리지 않는 이유</h3>
+    <p>누가 링크를 바꿔치기해 가짜 저장소로 보내는 일(피싱)을 막으려고, 이 사이트는 설치 링크를 걸지 않습니다. 대신 스킬 위치를 글자로 보여 드리고, 쓰시는 AI(Claude Code·Codex 등)에 붙여 넣을 문장을 드립니다. 그 문장은 AI가 <b>라이선스와 위험한 내용을 먼저 확인하고, 주소가 github.com의 해당 저장소일 때만</b> 설치하도록 되어 있습니다.</p>
     <h3>꼭 알아 두세요</h3>
     <p class="note">이 등급은 공개된 파일을 규칙으로 읽은 <b>참고 정보이며 법률 자문이 아닙니다.</b> 쓰기 전에 근거 링크의 라이선스 원문을 직접 확인하세요. 틀린 판정을 발견하면 <a href="https://x.com/oneday3min" rel="noopener">@oneday3min</a>으로 알려 주세요.</p>
   </section>
@@ -99,20 +108,19 @@
 
 <template id="card-tpl">
   <li class="card">
-    <div class="card-head">
-      <span class="g"></span>
-      <div class="ttl">
-        <h3 class="name"></h3>
-        <p class="meta"></p>
-      </div>
-      <span class="lic"></span>
-    </div>
-    <p class="desc"></p>
-    <p class="why"></p>
     <details>
-      <summary>자세히 · 설치 방법</summary>
-      <ul class="flags"></ul>
-      <div class="howto"></div>
+      <summary class="row-sum">
+        <span class="g"></span>
+        <span class="ttl"><b class="name"></b><span class="desc"></span></span>
+        <span class="cat"></span>
+        <span class="lic"></span>
+      </summary>
+      <div class="body">
+        <p class="meta"></p>
+        <p class="why"></p>
+        <ul class="flags"></ul>
+        <div class="howto"></div>
+      </div>
     </details>
   </li>
 </template>
