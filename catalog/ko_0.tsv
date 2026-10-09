@@ -1,0 +1,160 @@
+anthropics/skills/skills/academy-guide	AI·에이전트	Claude 사용법 질문에 맞는 공식 강의·튜토리얼을 추천
+anthropics/skills/skills/algorithmic-art	디자인·이미지	p5.js 코드로 생성형 아트를 만들고 값을 바꿔 가며 탐색
+anthropics/skills/skills/brand-guidelines	디자인·이미지	Anthropic 브랜드 색·글꼴을 결과물에 적용(Anthropic 전용)
+anthropics/skills/skills/canvas-design	디자인·이미지	포스터·아트워크를 PNG·PDF로 디자인
+anthropics/skills/skills/claude-api	개발·코딩	Claude API·SDK 레퍼런스(모델, 가격, 도구 사용, 캐싱 등)
+anthropics/skills/skills/discernment-nudge	업무·생산성	AI 답을 그대로 쓰기 전에 스스로 검토하도록 짚어 줌
+anthropics/skills/skills/frontend-design	디자인·이미지	흔한 AI 느낌을 벗어난 개성 있는 웹 화면 디자인 가이드
+anthropics/skills/skills/internal-comms	글쓰기·마케팅	사내 공지·보고·뉴스레터를 회사 형식에 맞춰 작성
+anthropics/skills/skills/mcp-builder	연동·API	외부 서비스를 AI에 연결하는 MCP 서버 만들기 가이드
+anthropics/skills/skills/skill-creator	AI·에이전트	새 스킬 만들기·고치기·성능 측정
+anthropics/skills/skills/slack-gif-creator	디자인·이미지	슬랙용 움직이는 GIF 만들기
+anthropics/skills/skills/theme-factory	디자인·이미지	슬라이드·문서·웹페이지에 10가지 기본 테마(색·글꼴) 적용
+anthropics/skills/skills/web-artifacts-builder	개발·코딩	React·Tailwind로 여러 화면짜리 HTML 결과물 만들기
+anthropics/skills/skills/webapp-testing	테스트·디버깅	Playwright로 내 웹앱을 열어 동작 확인·화면 캡처
+obra/superpowers/skills/brainstorming	업무·생산성	만들기 전에 의도·요구사항·설계를 질문으로 정리
+obra/superpowers/skills/diagnosing-superpowers	AI·에이전트	Superpowers 작업이 꼬였을 때 원인 진단·버그 리포트
+obra/superpowers/skills/dispatching-parallel-agents	AI·에이전트	독립적인 일 여러 개를 에이전트에 나눠 동시에 처리
+obra/superpowers/skills/executing-plans	개발·코딩	세운 구현 계획을 단계별로 직접 실행
+obra/superpowers/skills/finishing-a-development-branch	개발·코딩	구현·테스트가 끝난 브랜치를 합칠 방법 결정
+obra/superpowers/skills/receiving-code-review	개발·코딩	코드 리뷰 의견을 무조건 따르지 않고 따져 본 뒤 반영
+obra/superpowers/skills/requesting-code-review	개발·코딩	합치기 전에 요구사항을 채웠는지 리뷰 요청
+obra/superpowers/skills/subagent-driven-development	AI·에이전트	구현 계획의 작업을 하위 에이전트에 맡겨 진행
+obra/superpowers/skills/systematic-debugging	테스트·디버깅	고치기 전에 원인부터 찾는 체계적 디버깅
+obra/superpowers/skills/test-driven-development	테스트·디버깅	테스트를 먼저 쓰고 구현하는 TDD
+obra/superpowers/skills/using-git-worktrees	개발·코딩	git worktree로 작업 공간을 분리
+obra/superpowers/skills/using-superpowers	AI·에이전트	대화 시작 때 어떤 스킬을 쓸지 먼저 찾게 하는 기본 규칙
+obra/superpowers/skills/verification-before-completion	테스트·디버깅	"다 됐다"고 말하기 전에 실제로 실행해 확인
+obra/superpowers/skills/writing-plans	업무·생산성	여러 단계 작업을 코드 짜기 전에 계획으로 정리
+obra/superpowers/skills/writing-skills	AI·에이전트	스킬을 쓰고 고치고 배포 전에 검증
+addyosmani/agent-skills/skills/api-and-interface-design	개발·코딩	REST·GraphQL API와 모듈 경계를 안정적으로 설계
+addyosmani/agent-skills/skills/browser-testing-with-devtools	테스트·디버깅	Chrome DevTools로 실제 브라우저에서 화면·콘솔 오류 확인
+addyosmani/agent-skills/skills/ci-cd-and-automation	개발·코딩	빌드·배포 파이프라인(CI/CD) 설정과 품질 검사 자동화
+addyosmani/agent-skills/skills/code-review-and-quality	개발·코딩	합치기 전 여러 기준으로 코드 리뷰
+addyosmani/agent-skills/skills/code-simplification	개발·코딩	동작은 그대로 두고 코드를 읽기 쉽게 정리
+addyosmani/agent-skills/skills/constraint-driven-development	개발·코딩	품질 기준을 문서로 정해 AI가 몰래 낮추지 못하게 함
+addyosmani/agent-skills/skills/context-engineering	AI·에이전트	AI 작업 맥락·규칙 파일 설정으로 결과 품질 유지
+addyosmani/agent-skills/skills/debugging-and-error-recovery	테스트·디버깅	테스트 실패·빌드 오류의 근본 원인 찾기
+addyosmani/agent-skills/skills/deprecation-and-migration	개발·코딩	오래된 기능·API를 없애고 새것으로 옮기기
+addyosmani/agent-skills/skills/documentation-and-adrs	문서·오피스	설계 결정(ADR)과 문서 기록
+addyosmani/agent-skills/skills/doubt-driven-development	개발·코딩	중요한 결정마다 반대 입장에서 다시 검토
+addyosmani/agent-skills/skills/frontend-ui-engineering	개발·코딩	접근성·반응형을 갖춘 실서비스 수준 화면 구현
+addyosmani/agent-skills/skills/git-workflow-and-versioning	개발·코딩	커밋·브랜치·충돌 해결 등 git 작업 습관
+addyosmani/agent-skills/skills/idea-refine	업무·생산성	막연한 아이디어를 실행 가능한 콘셉트로 다듬기
+addyosmani/agent-skills/skills/incremental-implementation	개발·코딩	큰 변경을 작게 쪼개 하나씩 확인하며 구현
+addyosmani/agent-skills/skills/interview-me	업무·생산성	한 번에 한 질문씩 물어 진짜 원하는 것을 찾아냄
+addyosmani/agent-skills/skills/observability-and-instrumentation	개발·코딩	로그·지표·추적·알림으로 서비스 상태를 보이게 함
+addyosmani/agent-skills/skills/performance-optimization	개발·코딩	화면·서버·DB 성능 문제 찾고 개선
+addyosmani/agent-skills/skills/planning-and-task-breakdown	업무·생산성	요구사항을 순서 있는 작업 목록으로 쪼개기
+addyosmani/agent-skills/skills/security-and-hardening	보안	입력 처리·인증·저장 코드의 보안 취약점 점검
+addyosmani/agent-skills/skills/shipping-and-launch	개발·코딩	서비스 출시 전 점검표
+addyosmani/agent-skills/skills/source-driven-development	개발·코딩	공식 문서를 근거로 구현 방법 확인
+addyosmani/agent-skills/skills/spec-driven-development	개발·코딩	코딩 전에 기획서(PRD)·명세부터 작성
+addyosmani/agent-skills/skills/test-driven-development	테스트·디버깅	실패하는 테스트 → 구현 → 정리 순서의 TDD
+addyosmani/agent-skills/skills/using-agent-skills	AI·에이전트	작업에 맞는 스킬을 찾아 쓰는 안내
+ComposioHQ/awesome-claude-skills/artifacts-builder	개발·코딩	React·Tailwind로 여러 화면짜리 HTML 결과물 만들기(Anthropic 스킬 사본)
+ComposioHQ/awesome-claude-skills/brand-guidelines	디자인·이미지	Anthropic 브랜드 색·글꼴 적용(Anthropic 스킬 사본)
+ComposioHQ/awesome-claude-skills/canvas-design	디자인·이미지	포스터·아트워크 PNG·PDF 디자인(Anthropic 스킬 사본)
+coreyhaines31/marketingskills/skills/ab-testing	글쓰기·마케팅	A/B 테스트와 성장 실험 설계
+coreyhaines31/marketingskills/skills/ad-creative	글쓰기·마케팅	광고 문구·시안 여러 버전 만들기
+coreyhaines31/marketingskills/skills/ads	글쓰기·마케팅	구글·메타·링크드인·X 유료 광고 캠페인
+coreyhaines31/marketingskills/skills/ai-seo	글쓰기·마케팅	AI 검색(ChatGPT 등) 답변에 인용되도록 콘텐츠 최적화
+coreyhaines31/marketingskills/skills/analytics	데이터·분석	GA4 등 분석·전환 추적 설정과 점검
+coreyhaines31/marketingskills/skills/aso	글쓰기·마케팅	앱스토어·구글플레이 등록 페이지 최적화
+coreyhaines31/marketingskills/skills/attribution	데이터·분석	어떤 마케팅이 매출을 만들었는지 기여도 분석
+coreyhaines31/marketingskills/skills/churn-prevention	글쓰기·마케팅	해지 방지·이탈 고객 붙잡기 전략
+coreyhaines31/marketingskills/skills/co-marketing	글쓰기·마케팅	제휴 마케팅 파트너 찾기·공동 캠페인
+coreyhaines31/marketingskills/skills/cold-email	글쓰기·마케팅	답장 받는 B2B 콜드 메일·후속 연락
+coreyhaines31/marketingskills/skills/community-marketing	글쓰기·마케팅	디스코드·슬랙 커뮤니티로 제품 성장
+coreyhaines31/marketingskills/skills/competitor-profiling	글쓰기·마케팅	경쟁사 주소로 경쟁사 조사·정리
+coreyhaines31/marketingskills/skills/competitors	글쓰기·마케팅	"A vs B" 비교·대안 페이지 만들기(SEO)
+coreyhaines31/marketingskills/skills/content-strategy	글쓰기·마케팅	어떤 콘텐츠를 만들지 주제·전략 계획
+coreyhaines31/marketingskills/skills/copy-editing	글쓰기·마케팅	기존 마케팅 문구 다듬기·오래된 글 새로 고치기
+coreyhaines31/marketingskills/skills/copywriting	글쓰기·마케팅	홈페이지·랜딩·가격 페이지 문구 쓰기
+coreyhaines31/marketingskills/skills/cro	글쓰기·마케팅	페이지·가입 폼의 전환율 높이기
+coreyhaines31/marketingskills/skills/customer-research	글쓰기·마케팅	고객 인터뷰·리뷰 분석으로 고객 이해
+coreyhaines31/marketingskills/skills/directory-submissions	글쓰기·마케팅	스타트업·AI 디렉터리에 제품 등록(백링크)
+coreyhaines31/marketingskills/skills/emails	글쓰기·마케팅	가입 후 자동 메일·뉴스레터 시퀀스
+coreyhaines31/marketingskills/skills/events	글쓰기·마케팅	웨비나·컨퍼런스·밋업 기획과 활용
+coreyhaines31/marketingskills/skills/free-tools	글쓰기·마케팅	잠재 고객을 모으는 무료 도구 기획
+coreyhaines31/marketingskills/skills/image	디자인·이미지	블로그 대표 이미지·SNS 그래픽 등 마케팅 이미지
+coreyhaines31/marketingskills/skills/influencer-marketing	글쓰기·마케팅	인플루언서·크리에이터 협업 진행
+coreyhaines31/marketingskills/skills/launch	글쓰기·마케팅	제품 출시·Product Hunt 런칭 계획
+coreyhaines31/marketingskills/skills/marketing-council	글쓰기·마케팅	유명 마케터들의 관점으로 여러 의견 듣기(가상 자문단)
+coreyhaines31/marketingskills/skills/marketing-ideas	글쓰기·마케팅	SaaS 제품 마케팅 아이디어 모음
+coreyhaines31/marketingskills/skills/marketing-loops	글쓰기·마케팅	AI가 주기적으로 돌리는 반복 마케팅 업무 만들기
+coreyhaines31/marketingskills/skills/marketing-plan	글쓰기·마케팅	종합 마케팅 계획서 작성
+coreyhaines31/marketingskills/skills/marketing-psychology	글쓰기·마케팅	심리학·행동과학 원리를 마케팅에 적용
+coreyhaines31/marketingskills/skills/offers	글쓰기·마케팅	가격·보너스·보증을 묶은 판매 제안 설계
+coreyhaines31/marketingskills/skills/onboarding	글쓰기·마케팅	가입 직후 온보딩·첫 사용 경험 개선
+coreyhaines31/marketingskills/skills/paywalls	글쓰기·마케팅	앱 안 유료 전환 화면·업그레이드 유도 최적화
+coreyhaines31/marketingskills/skills/popups	글쓰기·마케팅	전환용 팝업·배너 만들기와 최적화
+coreyhaines31/marketingskills/skills/pricing	글쓰기·마케팅	가격 책정·요금제 구성·무료 체험 전략
+coreyhaines31/marketingskills/skills/product-marketing	글쓰기·마케팅	제품 마케팅 기본 정보 문서 만들기(다른 마케팅 스킬의 바탕)
+coreyhaines31/marketingskills/skills/programmatic-seo	글쓰기·마케팅	템플릿·데이터로 SEO 페이지를 대량 생성
+coreyhaines31/marketingskills/skills/prospecting	글쓰기·마케팅	연락할 잠재 고객 목록 찾기·선별
+coreyhaines31/marketingskills/skills/public-relations	글쓰기·마케팅	언론 홍보·기자 연락·보도 전략
+K-Dense-AI/scientific-agent-skills/skills/13c-metabolic-flux	연구·과학	탄소-13 추적 데이터로 세포 대사 흐름 추정
+K-Dense-AI/scientific-agent-skills/skills/adaptyv	연구·과학	Adaptyv Bio API로 단백질 실험 설계·의뢰·결과 받기
+K-Dense-AI/scientific-agent-skills/skills/aeon	데이터·분석	시계열 머신러닝(분류·예측·이상 탐지)
+K-Dense-AI/scientific-agent-skills/skills/alphagenome	연구·과학	AlphaGenome으로 유전 변이 효과 조회
+K-Dense-AI/scientific-agent-skills/skills/analytical-method-validation	연구·과학	ICH·USP 기준에 맞춘 분석법 밸리데이션 문서
+K-Dense-AI/scientific-agent-skills/skills/anndata	연구·과학	단일세포 분석 데이터(.h5ad) 다루기
+K-Dense-AI/scientific-agent-skills/skills/arbor	AI·에이전트	평가 기준을 정해 연구 결과물·모델을 반복 개선
+K-Dense-AI/scientific-agent-skills/skills/arboreto	연구·과학	발현 데이터로 유전자 조절 네트워크 추론
+K-Dense-AI/scientific-agent-skills/skills/astropy	연구·과학	천문학 계산·FITS 파일·좌표 변환(Astropy)
+K-Dense-AI/scientific-agent-skills/skills/autoskill	AI·에이전트	화면 기록에서 반복 연구 작업을 찾아 새 스킬 초안 생성
+K-Dense-AI/scientific-agent-skills/skills/benchling-integration	연구·과학	Benchling 실험 노트·재고 API 자동화
+K-Dense-AI/scientific-agent-skills/skills/bgpt-paper-search	연구·과학	논문 검색과 본문 속 근거 문장 추출
+K-Dense-AI/scientific-agent-skills/skills/bids	연구·과학	뇌영상 데이터(BIDS) 정리·검증·변환
+K-Dense-AI/scientific-agent-skills/skills/biopython	연구·과학	서열 처리·FASTA 파싱·PubMed 조회(Biopython)
+K-Dense-AI/scientific-agent-skills/skills/bioservices	연구·과학	UniProt·KEGG 등 생물정보 DB 조회
+K-Dense-AI/scientific-agent-skills/skills/bulk-rnaseq	연구·과학	RNA-seq 결과로 유전자 발현 차이 분석
+K-Dense-AI/scientific-agent-skills/skills/cantera	연구·과학	Cantera로 연소 반응·점화 지연 계산
+K-Dense-AI/scientific-agent-skills/skills/cellprofiler	연구·과학	현미경 이미지에서 세포 분할·개수·형광 측정
+K-Dense-AI/scientific-agent-skills/skills/cellxgene-census	연구·과학	공개 단일세포 데이터(CELLxGENE) 조회
+K-Dense-AI/scientific-agent-skills/skills/cirq	연구·과학	구글 Cirq로 양자 회로 설계·실험
+K-Dense-AI/scientific-agent-skills/skills/citation-management	연구·과학	논문 검색·서지 정보 확인·인용 목록 만들기
+K-Dense-AI/scientific-agent-skills/skills/clinical-decision-support	연구·과학	연구용 임상 의사결정 지원 평가 자료 준비(진료용 아님)
+K-Dense-AI/scientific-agent-skills/skills/clinical-reports	연구·과학	임상·시험 보고서 초안 구조와 점검(연구용)
+K-Dense-AI/scientific-agent-skills/skills/cobrapy	연구·과학	COBRApy로 대사 모델링(FBA·유전자 결손)
+K-Dense-AI/scientific-agent-skills/skills/consciousness-council	업무·생산성	여러 사고방식 역할로 결정·트레이드오프 토론
+K-Dense-AI/scientific-agent-skills/skills/dask	데이터·분석	메모리보다 큰 데이터를 Dask로 나눠 처리
+K-Dense-AI/scientific-agent-skills/skills/database-lookup	데이터·분석	공개 DB API를 출처와 함께 조회
+K-Dense-AI/scientific-agent-skills/skills/datalad	연구·과학	연구 데이터셋 버전 관리·공개(DataLad)
+K-Dense-AI/scientific-agent-skills/skills/datamol	연구·과학	신약 개발용 분자(SMILES) 처리(RDKit 간편판)
+K-Dense-AI/scientific-agent-skills/skills/deepchem	연구·과학	DeepChem으로 분자 특성 예측 모델
+K-Dense-AI/scientific-agent-skills/skills/deepspot-m	연구·과학	조직 염색 이미지로 공간 유전자 발현 예측
+K-Dense-AI/scientific-agent-skills/skills/deeptools	연구·과학	NGS 데이터 변환·품질 확인·히트맵(deepTools)
+K-Dense-AI/scientific-agent-skills/skills/depmap	연구·과학	암 의존성 지도(DepMap) 데이터 분석
+K-Dense-AI/scientific-agent-skills/skills/dhdna-profiler	글쓰기·마케팅	글의 사고·문체 패턴을 탐색적으로 분석
+K-Dense-AI/scientific-agent-skills/skills/diffdock	연구·과학	DiffDock으로 단백질-약물 결합 위치 예측
+K-Dense-AI/scientific-agent-skills/skills/dnanexus-integration	연구·과학	DNAnexus에서 유전체 분석 작업 실행
+K-Dense-AI/scientific-agent-skills/skills/esm	연구·과학	ESM3로 단백질 생성·구조 예측
+K-Dense-AI/scientific-agent-skills/skills/etetoolkit	연구·과학	계통수 분석·편집·시각화(ETE)
+K-Dense-AI/scientific-agent-skills/skills/exa-search	연구·과학	Exa로 학술·기술 웹 검색과 PDF 본문 추출
+K-Dense-AI/scientific-agent-skills/skills/experimental-design	연구·과학	데이터 모으기 전에 실험 설계(무작위화·블록)
+blader/humanizer/(root)	글쓰기·마케팅	AI가 쓴 티 나는 문장을 사람이 쓴 것처럼 고쳐 씀
+cathrynlavery/diagram-design/skills/diagram-design	디자인·이미지	구조도·순서도·타임라인 등 깔끔한 다이어그램
+wshobson/agents/plugins/accessibility-compliance/skills/screen-reader-testing	테스트·디버깅	스크린리더(VoiceOver·NVDA)로 웹 접근성 시험
+wshobson/agents/plugins/accessibility-compliance/skills/wcag-audit-patterns	테스트·디버깅	WCAG 2.2 웹 접근성 감사와 수정 안내
+wshobson/agents/plugins/agent-teams/skills/multi-reviewer-patterns	AI·에이전트	여러 에이전트가 나눠 코드 리뷰하고 결과 합치기
+wshobson/agents/plugins/agent-teams/skills/parallel-debugging	AI·에이전트	가설 여러 개를 에이전트들이 동시에 조사해 원인 찾기
+wshobson/agents/plugins/agent-teams/skills/parallel-feature-development	AI·에이전트	여러 에이전트가 파일을 나눠 맡아 기능 동시 개발
+wshobson/agents/plugins/agent-teams/skills/task-coordination-strategies	AI·에이전트	큰 작업을 쪼개 에이전트들에 나눠 주기
+wshobson/agents/plugins/agent-teams/skills/team-communication-protocols	AI·에이전트	에이전트 팀끼리 주고받는 메시지 규칙
+wshobson/agents/plugins/agent-teams/skills/team-composition-patterns	AI·에이전트	작업에 맞는 에이전트 팀 구성·인원 정하기
+wshobson/agents/plugins/api-scaffolding/skills/fastapi-templates	개발·코딩	FastAPI 프로젝트 기본 틀 만들기
+wshobson/agents/plugins/avoid-ai-writing/skills/avoid-ai-writing	글쓰기·마케팅	AI 말투를 찾아내 자연스럽게 고쳐 씀
+wshobson/agents/plugins/backend-development/skills/api-design-principles	개발·코딩	REST·GraphQL API 설계 원칙
+wshobson/agents/plugins/backend-development/skills/architecture-patterns	개발·코딩	클린·헥사고날 아키텍처, DDD 적용
+wshobson/agents/plugins/backend-development/skills/cqrs-implementation	개발·코딩	읽기·쓰기 모델을 나누는 CQRS 구현
+wshobson/agents/plugins/backend-development/skills/event-store-design	개발·코딩	이벤트 소싱용 이벤트 저장소 설계
+wshobson/agents/plugins/backend-development/skills/microservices-patterns	개발·코딩	마이크로서비스 경계·통신·장애 대응 설계
+wshobson/agents/plugins/backend-development/skills/projection-patterns	개발·코딩	이벤트 흐름으로 조회용 모델 만들기
+wshobson/agents/plugins/backend-development/skills/saga-orchestration	개발·코딩	여러 서비스에 걸친 거래를 사가 패턴으로 처리
+wshobson/agents/plugins/backend-development/skills/temporal-python-testing	테스트·디버깅	Temporal 워크플로를 pytest로 시험
+wshobson/agents/plugins/backend-development/skills/workflow-orchestration-patterns	개발·코딩	Temporal로 오래 도는 작업 흐름 설계
+wshobson/agents/plugins/before-you-build/skills/before-you-build	업무·생산성	랜딩·MVP 만들기 전에 제품 위험 점검
+wshobson/agents/plugins/block-no-verify/skills/block-no-verify-hook	보안	AI가 git 커밋 검사를 건너뛰지 못하게 막는 훅
+wshobson/agents/plugins/blockchain-web3/skills/defi-protocol-templates	개발·코딩	스테이킹·AMM 등 DeFi 스마트 계약 템플릿(개발용)

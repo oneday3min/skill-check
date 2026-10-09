@@ -1,0 +1,33 @@
+# 추천 목록에 넣을 저장소 (2026-10-09 GitHub 검색 topic:agent-skills, topic:claude-skills 별 순)
+anthropics/skills
+obra/superpowers
+addyosmani/agent-skills
+ComposioHQ/awesome-claude-skills include=document-skills
+coreyhaines31/marketingskills
+K-Dense-AI/scientific-agent-skills
+blader/humanizer
+cathrynlavery/diagram-design
+wshobson/agents
+github/awesome-copilot
+alirezarezvani/claude-skills
+OthmanAdi/planning-with-files
+phuryn/pm-skills
+JimLiu/baoyu-skills
+AgriciDaniel/claude-obsidian
+Orchestra-Research/AI-Research-SKILLs
+Jeffallan/claude-skills
+deanpeters/Product-Manager-Skills
+sickn33/agentic-awesome-skills
+garrytan/gstack
+Leonxlnx/taste-skill
+mvanhorn/last30days-skill
+irinabuht12-oss/marketing-skills
+sergebulaev/linkedin-skills
+nidhinjs/prompt-master
+browser-act/skills
+googleworkspace/cli
+# 조건부 라이선스 예시(GPL·AGPL·CC-BY-SA) — 2026-10-09 GitHub 검색 license:gpl-3.0 / agpl-3.0 / cc-by-sa-4.0
+chuspeeism/dashi-ppt-skill
+op7418/guizang-social-card-skill
+trailofbits/skills
+NeoLabHQ/context-engineering-kit

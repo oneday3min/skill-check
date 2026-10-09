@@ -1,0 +1,132 @@
+garrytan/gstack/design-shotgun	디자인·이미지	디자인 시안 여러 개를 만들어 비교하고 고르기
+garrytan/gstack/deslop-shared-libs	개발·코딩	최근 코드에서 공통 코드로 뽑을 만한 것 찾기
+garrytan/gstack/devex-review	개발·코딩	개발자 사용 경험(DX) 점검
+garrytan/gstack/diagram	디자인·이미지	글 설명으로 다이어그램(Excalidraw·SVG·PNG) 만들기
+garrytan/gstack/document-generate	문서·오피스	기능·모듈 문서를 처음부터 작성
+garrytan/gstack/document-release	문서·오피스	출시 전 문서 점검
+garrytan/gstack/freeze	보안	이번 작업 중 특정 폴더만 고치도록 제한
+garrytan/gstack/gstack-upgrade	AI·에이전트	gstack 최신 버전으로 업데이트
+garrytan/gstack/guard	보안	위험한 명령 경고 + 수정 범위 제한 안전 모드
+garrytan/gstack/health	개발·코딩	코드 품질 현황판
+garrytan/gstack/investigate	테스트·디버깅	원인부터 찾는 체계적 디버깅
+garrytan/gstack/ios-clean	개발·코딩	iOS 앱에서 디버그 연결 코드 제거
+garrytan/gstack/ios-design-review	디자인·이미지	실제 기기에서 iOS 앱 디자인 점검
+garrytan/gstack/ios-fix	테스트·디버깅	iOS 버그 자동 수정
+garrytan/gstack/ios-qa	테스트·디버깅	실제 기기로 SwiftUI 앱 QA
+garrytan/gstack/ios-sync	개발·코딩	iOS 디버그 연결 코드 다시 생성
+garrytan/gstack/land-and-deploy	개발·코딩	코드 합치고 배포까지 진행
+garrytan/gstack/landing-report	개발·코딩	배포 대기열 현황판(읽기 전용)
+garrytan/gstack/learn	AI·에이전트	프로젝트에서 배운 점 기록·관리
+garrytan/gstack/make-pdf	문서·오피스	마크다운을 출판 품질 PDF로 변환
+garrytan/gstack/office-hours	업무·생산성	YC 오피스아워 방식으로 아이디어 점검
+garrytan/gstack/open-gstack-browser	테스트·디버깅	AI가 조작하는 크롬 브라우저 열기
+garrytan/gstack/openclaw/skills/gstack-openclaw-ceo-review	업무·생산성	CEO 관점에서 계획의 빈틈 짚기(OpenClaw용)
+garrytan/gstack/openclaw/skills/gstack-openclaw-investigate	테스트·디버깅	버그 원인 조사(OpenClaw용)
+garrytan/gstack/openclaw/skills/gstack-openclaw-office-hours	업무·생산성	만들 가치가 있는 아이디어인지 점검(OpenClaw용)
+Leonxlnx/taste-skill/skills/brandkit	디자인·이미지	브랜드 가이드·로고 시스템 보드 이미지 생성
+Leonxlnx/taste-skill/skills/brutalist-skill	디자인·이미지	스위스 타이포·터미널 느낌의 브루탈리즘 화면 스타일
+Leonxlnx/taste-skill/skills/gpt-tasteskill	디자인·이미지	고급 UI와 GSAP 애니메이션 화면 만들기
+Leonxlnx/taste-skill/skills/image-to-code-skill	디자인·이미지	디자인 이미지를 먼저 만들고 그대로 웹 코드로 구현
+Leonxlnx/taste-skill/skills/imagegen-frontend-mobile	디자인·이미지	모바일 앱 화면 콘셉트 이미지 생성
+Leonxlnx/taste-skill/skills/imagegen-frontend-web	디자인·이미지	웹사이트 디자인 참고 이미지 생성
+Leonxlnx/taste-skill/skills/minimalist-skill	디자인·이미지	따뜻한 단색·벤토 그리드의 미니멀 화면 스타일
+Leonxlnx/taste-skill/skills/output-skill	개발·코딩	코드를 중간에 자르지 않고 끝까지 쓰게 함
+Leonxlnx/taste-skill/skills/redesign-skill	디자인·이미지	기존 사이트·앱을 고급스럽게 리디자인
+Leonxlnx/taste-skill/skills/soft-skill	디자인·이미지	고급 에이전시 느낌의 글꼴·여백·그림자 규칙
+Leonxlnx/taste-skill/skills/stitch-skill	디자인·이미지	Google Stitch용 디자인 시스템(DESIGN.md) 만들기
+Leonxlnx/taste-skill/skills/taste-skill-v1	디자인·이미지	taste-skill 첫 버전(예전 프로젝트용)
+Leonxlnx/taste-skill/skills/taste-skill	디자인·이미지	흔한 AI 느낌 없는 랜딩·포트폴리오 화면
+sergebulaev/linkedin-skills/(root)	글쓰기·마케팅	링크드인 글·댓글 기획·작성·점검·게시 모음
+sergebulaev/linkedin-skills/skills/linkedin-comment-drafter	글쓰기·마케팅	남의 링크드인 글에 달 댓글 초안
+sergebulaev/linkedin-skills/skills/linkedin-content-planner	글쓰기·마케팅	7일치 링크드인 콘텐츠 계획
+sergebulaev/linkedin-skills/skills/linkedin-employee-advocacy	글쓰기·마케팅	직원들이 회사 글을 퍼뜨리는 프로그램 운영
+sergebulaev/linkedin-skills/skills/linkedin-engager-analytics	데이터·분석	링크드인 글에 반응한 사람 분석
+sergebulaev/linkedin-skills/skills/linkedin-hook-extractor	글쓰기·마케팅	인기 링크드인 글의 첫 문장 공식 분석
+sergebulaev/linkedin-skills/skills/linkedin-humanizer	글쓰기·마케팅	링크드인 글에서 AI 말투 지우기
+sergebulaev/linkedin-skills/skills/linkedin-interviewer	글쓰기·마케팅	인터뷰로 글감(경험·숫자·전환점) 모으기
+sergebulaev/linkedin-skills/skills/linkedin-post-writer	글쓰기·마케팅	20가지 첫 문장 공식으로 링크드인 글 쓰기
+sergebulaev/linkedin-skills/skills/linkedin-profile-optimizer	글쓰기·마케팅	링크드인 프로필 전체 점검·다시 쓰기
+sergebulaev/linkedin-skills/skills/linkedin-reply-handler	글쓰기·마케팅	내 글에 달린 댓글 답글 초안
+sergebulaev/linkedin-skills/skills/linkedin-repurposer	글쓰기·마케팅	트윗·유튜브·블로그를 링크드인 글로 바꾸기
+sergebulaev/linkedin-skills/skills/linkedin-thread-monitor	데이터·분석	내 댓글에 작성자 답글이 달렸는지 추적
+nidhinjs/prompt-master/(root)	AI·에이전트	쓰려는 AI 도구에 맞게 프롬프트 작성·개선
+browser-act/skills/browser-act-skill-forge	AI·에이전트	웹사이트를 살펴보고 재사용할 스킬을 만들어 줌(browser-act)
+browser-act/skills/browser-act	테스트·디버깅	AI용 브라우저 자동화 도구(browser-act)
+browser-act/skills/solutions/ecommerce/1688-product-detail	데이터·분석	1688 도매 상품 정보 수집
+browser-act/skills/solutions/ecommerce/airbnb-listing-detail	데이터·분석	에어비앤비 숙소 상세 정보 수집(내부 API)
+browser-act/skills/solutions/ecommerce/airbnb-search-listing	데이터·분석	에어비앤비 검색 결과 수집
+browser-act/skills/solutions/ecommerce/amazon-alexa-qa	데이터·분석	아마존 쇼핑 AI에 질문하고 답 모으기
+browser-act/skills/solutions/ecommerce/amazon-asin-lookup-api-skill	데이터·분석	ASIN으로 아마존 상품 정보 수집(BrowserAct API)
+browser-act/skills/solutions/ecommerce/amazon-best-selling-products-finder-api-skill	데이터·분석	아마존 베스트셀러 수집(BrowserAct API)
+browser-act/skills/solutions/ecommerce/amazon-bestseller-listing	데이터·분석	아마존 베스트셀러 순위 수집
+browser-act/skills/solutions/ecommerce/amazon-buy-box-monitor-api-skill	데이터·분석	아마존 판매자별 가격 감시(BrowserAct API)
+browser-act/skills/solutions/ecommerce/amazon-competitor-analyzer	데이터·분석	아마존 경쟁 상품 수집·비교 분석
+browser-act/skills/solutions/ecommerce/amazon-listing-competitor-analysis-skill	데이터·분석	아마존 경쟁 상품 페이지 분석
+browser-act/skills/solutions/ecommerce/amazon-product-api-skill	데이터·분석	아마존 상품 목록 수집(BrowserAct API)
+browser-act/skills/solutions/ecommerce/amazon-product-detail	데이터·분석	아마존 상품 상세 정보 수집
+browser-act/skills/solutions/ecommerce/amazon-product-search-api-skill	데이터·분석	아마존 검색 결과 수집(BrowserAct API)
+browser-act/skills/solutions/ecommerce/amazon-reviews-api-skill	데이터·분석	아마존 리뷰 수집(BrowserAct API)
+browser-act/skills/solutions/ecommerce/amazon-search-listing	데이터·분석	아마존 검색·카테고리 목록 수집
+browser-act/skills/solutions/ecommerce/ebay-item-detail	데이터·분석	이베이 상품 상세 수집
+browser-act/skills/solutions/ecommerce/ebay-search-listing	데이터·분석	이베이 검색 결과 수집
+browser-act/skills/solutions/ecommerce/ebay-sold-listings-search	데이터·분석	이베이 판매 완료 시세 수집
+browser-act/skills/solutions/ecommerce/ecommerce-listing	데이터·분석	쇼핑몰 상품 목록 수집
+browser-act/skills/solutions/ecommerce/ecommerce-product-detail	데이터·분석	쇼핑몰 상품 상세 수집
+browser-act/skills/solutions/ecommerce/ecommerce-reviews	데이터·분석	쇼핑몰 리뷰 수집
+browser-act/skills/solutions/ecommerce/ecommerce-seller-info	데이터·분석	마켓 판매자 정보 수집
+browser-act/skills/solutions/ecommerce/etsy-category-listing	데이터·분석	엣시 카테고리 상품 수집
+browser-act/skills/solutions/ecommerce/etsy-keyword-search	데이터·분석	엣시 검색 결과 수집
+browser-act/skills/solutions/ecommerce/etsy-product-detail	데이터·분석	엣시 상품 상세 수집
+browser-act/skills/solutions/ecommerce/etsy-shop-catalog	데이터·분석	엣시 가게 상품 목록 수집
+browser-act/skills/solutions/ecommerce/goofish-item-detail	데이터·분석	중국 중고마켓(셴위) 상품 상세 수집
+browser-act/skills/solutions/ecommerce/goofish-search-list	데이터·분석	중국 중고마켓(셴위) 검색 결과 수집
+browser-act/skills/solutions/ecommerce/taobao-keyword-search	데이터·분석	타오바오·티몰 검색 결과 수집
+browser-act/skills/solutions/ecommerce/taobao-product-detail	데이터·분석	타오바오·티몰 상품 상세 수집
+browser-act/skills/solutions/ecommerce/taobao-product-reviews	데이터·분석	타오바오·티몰 리뷰 수집
+browser-act/skills/solutions/ecommerce/taobao-shop-catalog	데이터·분석	타오바오 가게 상품 목록 수집
+browser-act/skills/solutions/ecommerce/walmart-category-listing	데이터·분석	월마트 카테고리 상품 수집
+browser-act/skills/solutions/ecommerce/walmart-keyword-search	데이터·분석	월마트 검색 결과 수집
+browser-act/skills/solutions/ecommerce/walmart-product-detail	데이터·분석	월마트 상품 상세 수집
+browser-act/skills/solutions/ecommerce/walmart-product-reviews	데이터·분석	월마트 리뷰 수집
+browser-act/skills/solutions/lead-generation/business-contact-social-links-skill	데이터·분석	회사 공식 사이트·SNS 주소 찾기
+browser-act/skills/solutions/lead-generation/github-project-contributor-finder-api-skill	데이터·분석	GitHub 프로젝트 기여자 연락처 수집 — 개인정보 주의
+googleworkspace/cli/skills/gws-admin-reports	연동·API	구글 워크스페이스 감사 로그·사용 보고서
+googleworkspace/cli/skills/gws-calendar-agenda	연동·API	구글 캘린더 다가오는 일정 보기
+googleworkspace/cli/skills/gws-calendar-insert	연동·API	구글 캘린더 일정 추가
+googleworkspace/cli/skills/gws-calendar	연동·API	구글 캘린더 관리
+googleworkspace/cli/skills/gws-chat-send	연동·API	구글 챗 메시지 보내기
+googleworkspace/cli/skills/gws-chat	연동·API	구글 챗 스페이스·메시지 관리
+googleworkspace/cli/skills/gws-classroom	연동·API	구글 클래스룸 수업·과제 관리
+googleworkspace/cli/skills/gws-docs-write	연동·API	구글 문서에 글 이어 쓰기
+googleworkspace/cli/skills/gws-docs	연동·API	구글 문서 읽기·쓰기
+googleworkspace/cli/skills/gws-drive-upload	연동·API	구글 드라이브에 파일 올리기
+googleworkspace/cli/skills/gws-drive	연동·API	구글 드라이브 파일·폴더 관리
+googleworkspace/cli/skills/gws-events-renew	연동·API	워크스페이스 이벤트 구독 갱신
+googleworkspace/cli/skills/gws-events-subscribe	연동·API	워크스페이스 이벤트 구독
+googleworkspace/cli/skills/gws-events	연동·API	워크스페이스 이벤트 받기
+googleworkspace/cli/skills/gws-forms	연동·API	구글 설문지 읽기·쓰기
+googleworkspace/cli/skills/gws-gmail-forward	연동·API	지메일 전달
+googleworkspace/cli/skills/gws-gmail-read	연동·API	지메일 읽기
+googleworkspace/cli/skills/gws-gmail-reply-all	연동·API	지메일 전체 답장
+googleworkspace/cli/skills/gws-gmail-reply	연동·API	지메일 답장
+googleworkspace/cli/skills/gws-gmail-send	연동·API	지메일 보내기
+googleworkspace/cli/skills/gws-gmail-triage	연동·API	안 읽은 지메일 요약
+googleworkspace/cli/skills/gws-gmail-watch	연동·API	새 지메일 실시간 받기
+googleworkspace/cli/skills/gws-gmail	연동·API	지메일 보내기·읽기·관리
+googleworkspace/cli/skills/gws-keep	연동·API	구글 킵 메모 관리
+googleworkspace/cli/skills/gws-meet	연동·API	구글 미트 회의 관리
+googleworkspace/cli/skills/gws-modelarmor-create-template	보안	구글 Model Armor 필터 템플릿 만들기
+googleworkspace/cli/skills/gws-modelarmor-sanitize-prompt	보안	프롬프트를 Model Armor로 걸러내기
+googleworkspace/cli/skills/gws-modelarmor-sanitize-response	보안	AI 답변을 Model Armor로 걸러내기
+googleworkspace/cli/skills/gws-modelarmor	보안	구글 Model Armor로 유해 콘텐츠 차단
+googleworkspace/cli/skills/gws-people	연동·API	구글 연락처 관리
+googleworkspace/cli/skills/gws-script-push	연동·API	앱스 스크립트 프로젝트에 파일 올리기
+googleworkspace/cli/skills/gws-script	연동·API	구글 앱스 스크립트 관리
+googleworkspace/cli/skills/gws-shared	연동·API	gws CLI 공통 설정(인증·옵션)
+googleworkspace/cli/skills/gws-sheets-append	연동·API	구글 시트에 행 추가
+googleworkspace/cli/skills/gws-sheets-read	연동·API	구글 시트 값 읽기
+googleworkspace/cli/skills/gws-sheets	연동·API	구글 시트 읽기·쓰기
+googleworkspace/cli/skills/gws-slides	연동·API	구글 슬라이드 읽기·쓰기
+googleworkspace/cli/skills/gws-tasks	연동·API	구글 할 일 관리
+googleworkspace/cli/skills/gws-workflow-email-to-task	연동·API	지메일을 구글 할 일로 바꾸기
+googleworkspace/cli/skills/gws-workflow-file-announce	연동·API	드라이브 파일을 구글 챗에 공유 알림

@@ -1,0 +1,102 @@
+wshobson/agents/plugins/blockchain-web3/skills/nft-standards	개발·코딩	ERC-721·1155 NFT 계약 구현(개발용)
+wshobson/agents/plugins/blockchain-web3/skills/solidity-security	보안	스마트 계약(Solidity) 보안 취약점 예방·감사
+wshobson/agents/plugins/blockchain-web3/skills/web3-testing	테스트·디버깅	Hardhat·Foundry로 스마트 계약 테스트
+wshobson/agents/plugins/brand-landingpage/skills/brand-landingpage	디자인·이미지	브랜드 인터뷰(색·글꼴) 후 랜딩 페이지 디자인
+wshobson/agents/plugins/business-analytics/skills/data-storytelling	데이터·분석	데이터를 설득력 있는 이야기와 차트로 보고
+wshobson/agents/plugins/business-analytics/skills/kpi-dashboard-design	데이터·분석	KPI 대시보드 지표 선정과 시각화 설계
+wshobson/agents/plugins/cicd-automation/skills/deployment-pipeline-design	개발·코딩	승인·보안 검사를 넣은 무중단 배포 파이프라인
+wshobson/agents/plugins/cicd-automation/skills/github-actions-templates	개발·코딩	GitHub Actions 테스트·빌드·배포 워크플로
+wshobson/agents/plugins/cicd-automation/skills/gitlab-ci-patterns	개발·코딩	GitLab CI/CD 파이프라인 구성
+wshobson/agents/plugins/cicd-automation/skills/secrets-management	보안	배포 파이프라인의 비밀키 관리(Vault 등)
+wshobson/agents/plugins/cloud-infrastructure/skills/cost-optimization	개발·코딩	AWS·Azure·GCP 클라우드 비용 줄이기
+wshobson/agents/plugins/cloud-infrastructure/skills/hybrid-cloud-networking	개발·코딩	사내 서버와 클라우드를 VPN 등으로 연결
+wshobson/agents/plugins/cloud-infrastructure/skills/istio-traffic-management	개발·코딩	Istio 트래픽 라우팅·카나리 배포
+wshobson/agents/plugins/cloud-infrastructure/skills/linkerd-patterns	개발·코딩	Linkerd 서비스 메시 구성
+wshobson/agents/plugins/cloud-infrastructure/skills/mtls-configuration	보안	서비스 간 상호 TLS(mTLS) 설정
+wshobson/agents/plugins/cloud-infrastructure/skills/multi-cloud-architecture	개발·코딩	여러 클라우드를 섞어 쓰는 구조 설계
+wshobson/agents/plugins/cloud-infrastructure/skills/service-mesh-observability	개발·코딩	서비스 메시 추적·지표·모니터링
+wshobson/agents/plugins/cloud-infrastructure/skills/terraform-module-library	개발·코딩	재사용 가능한 Terraform 인프라 모듈
+github/awesome-copilot/.github/skills/agentic-workflows	AI·에이전트	gh-aw 워크플로 요청을 알맞은 프롬프트로 연결(저장소 관리용)
+github/awesome-copilot/.github/skills/code-review	개발·코딩	awesome-copilot 저장소 기여 PR 리뷰(저장소 관리용)
+github/awesome-copilot/.github/skills/create-canvas-extension	개발·코딩	awesome-copilot에 캔버스 확장 추가(저장소 관리용)
+github/awesome-copilot/skills/acquire-codebase-knowledge	개발·코딩	처음 보는 코드베이스 구조를 파악해 문서로 정리
+github/awesome-copilot/skills/acreadiness-assess	AI·에이전트	저장소가 AI 에이전트 쓰기에 준비됐는지 점검(AgentRC)
+github/awesome-copilot/skills/acreadiness-generate-instructions	AI·에이전트	AI 에이전트용 지시 파일(copilot-instructions 등) 생성
+github/awesome-copilot/skills/acreadiness-policy	AI·에이전트	AgentRC 점검 기준(정책) 고르기·작성
+github/awesome-copilot/skills/ad-campaign-analyzer	데이터·분석	광고 성과 데이터로 줄일 것·늘릴 것 판단
+github/awesome-copilot/skills/add-educational-comments	개발·코딩	코드에 배우기 쉬운 설명 주석 달기
+github/awesome-copilot/skills/adobe-illustrator-scripting	디자인·이미지	일러스트레이터 자동화 스크립트(ExtendScript)
+github/awesome-copilot/skills/agent-architecture	AI·에이전트	AI 에이전트 구조 설계·문제 진단
+github/awesome-copilot/skills/agent-governance	AI·에이전트	AI 에이전트에 안전·통제 장치 넣기
+github/awesome-copilot/skills/agent-owasp-compliance	보안	AI 에이전트 코드를 OWASP 에이전트 보안 Top 10으로 점검
+github/awesome-copilot/skills/agent-skill-stack	AI·에이전트	목표에 필요한 최소한의 스킬 조합 찾기
+github/awesome-copilot/skills/agent-supply-chain	보안	에이전트 플러그인·도구의 무결성(SHA-256) 확인
+github/awesome-copilot/skills/agentic-eval	AI·에이전트	AI 결과를 스스로 평가·개선하는 루프 만들기
+github/awesome-copilot/skills/ai-prompt-engineering-safety-review	AI·에이전트	프롬프트의 안전·편향·보안 문제 검토
+github/awesome-copilot/skills/ai-ready	AI·에이전트	저장소에 AGENTS.md·지시 파일·CI를 만들어 AI 준비
+github/awesome-copilot/skills/ai-team-orchestration	AI·에이전트	가벼운 멀티 에이전트 개발팀 꾸려 운영
+github/awesome-copilot/skills/anti-ui-slop	디자인·이미지	실제 앱 화면 사례로 흔한 AI 느낌 UI 피하기(외부 서비스 사용)
+github/awesome-copilot/skills/api-breaking-change-detector	개발·코딩	C# API 변경이 프런트 코드를 깨는지 찾기
+github/awesome-copilot/skills/appinsights-instrumentation	개발·코딩	웹앱에 Azure App Insights 기록 추가
+github/awesome-copilot/skills/apple-appstore-reviewer	개발·코딩	앱스토어 심사 거절 사유가 될 부분 점검
+github/awesome-copilot/skills/arch-linux-triage	개발·코딩	Arch Linux 문제 해결(pacman·systemd)
+github/awesome-copilot/skills/architecture-blueprint-generator	문서·오피스	코드베이스를 분석해 구조 설명서 생성
+github/awesome-copilot/skills/arduino-azure-iot-edge-integration	개발·코딩	아두이노를 Azure IoT에 연결
+github/awesome-copilot/skills/arize-ai-provider-integration	연동·API	Arize에 LLM 제공사 연결 관리
+github/awesome-copilot/skills/arize-annotation	연동·API	Arize에서 사람 검토용 라벨 설정
+github/awesome-copilot/skills/arize-dataset	연동·API	Arize 데이터셋 만들기·관리
+github/awesome-copilot/skills/arize-evaluator	연동·API	Arize에서 AI 채점자(LLM-as-judge) 평가 실행
+github/awesome-copilot/skills/arize-experiment	연동·API	Arize 실험으로 모델 성능 비교
+github/awesome-copilot/skills/arize-instrumentation	연동·API	LLM 앱에 Arize 추적 기능 추가
+github/awesome-copilot/skills/arize-link	연동·API	Arize 화면으로 바로 가는 링크 만들기
+github/awesome-copilot/skills/arize-prompt-optimization	AI·에이전트	실제 사용 기록으로 프롬프트 개선(Arize)
+github/awesome-copilot/skills/arize-trace	연동·API	Arize 추적 기록 내려받아 LLM 앱 디버깅
+github/awesome-copilot/skills/aspnet-minimal-api-openapi	개발·코딩	ASP.NET Minimal API와 OpenAPI 문서
+github/awesome-copilot/skills/audit-integrity	보안	보안 감사 결과의 근거·품질 검증
+github/awesome-copilot/skills/automate-this	업무·생산성	손으로 하는 작업 녹화 영상을 보고 자동화 스크립트 생성
+github/awesome-copilot/skills/autoresearch	AI·에이전트	목표·지표를 정하고 AI가 반복 실험으로 개선
+phuryn/pm-skills/pm-ai-shipping/skills/code-review	개발·코딩	실제로 고칠 결함 중심의 코드 리뷰
+phuryn/pm-skills/pm-ai-shipping/skills/intended-vs-implemented	테스트·디버깅	의도한 동작과 실제 코드의 차이 찾기
+phuryn/pm-skills/pm-ai-shipping/skills/shipping-artifacts	문서·오피스	바이브코딩 앱 출시 전 꼭 있어야 할 문서 세트
+phuryn/pm-skills/pm-data-analytics/skills/ab-test-analysis	데이터·분석	A/B 테스트 결과 유의성 분석과 결론
+phuryn/pm-skills/pm-data-analytics/skills/cohort-analysis	데이터·분석	코호트별 리텐션·기능 사용 추이 분석
+phuryn/pm-skills/pm-data-analytics/skills/sql-queries	데이터·분석	말로 설명하면 SQL 쿼리 작성
+phuryn/pm-skills/pm-execution/skills/brainstorm-okrs	업무·생산성	회사 목표에 맞춘 팀 OKR 짜기
+phuryn/pm-skills/pm-execution/skills/create-prd	문서·오피스	8개 항목 템플릿으로 기획서(PRD) 작성
+phuryn/pm-skills/pm-execution/skills/dummy-dataset	데이터·분석	테스트용 가짜 데이터(CSV·JSON·SQL) 생성
+phuryn/pm-skills/pm-execution/skills/job-stories	업무·생산성	"~할 때 ~하고 싶다" 형식의 잡 스토리 작성
+phuryn/pm-skills/pm-execution/skills/outcome-roadmap	업무·생산성	기능 나열 로드맵을 성과 중심으로 바꾸기
+phuryn/pm-skills/pm-execution/skills/pre-mortem	업무·생산성	출시 전 "실패했다면 왜?" 위험 분석
+phuryn/pm-skills/pm-execution/skills/prioritization-frameworks	업무·생산성	RICE·ICE·MoSCoW 등 우선순위 방법 9가지
+phuryn/pm-skills/pm-execution/skills/release-notes	문서·오피스	티켓·변경 기록으로 사용자용 업데이트 소식 작성
+phuryn/pm-skills/pm-execution/skills/retro	업무·생산성	스프린트 회고 진행과 할 일 정리
+phuryn/pm-skills/pm-execution/skills/sprint-plan	업무·생산성	스프린트 계획(가용 인원·작업 선택·위험)
+phuryn/pm-skills/pm-execution/skills/stakeholder-map	업무·생산성	이해관계자 지도와 소통 계획
+phuryn/pm-skills/pm-execution/skills/strategy-red-team	업무·생산성	기획·전략의 핵심 가정을 일부러 공격해 검증
+phuryn/pm-skills/pm-execution/skills/summarize-meeting	업무·생산성	회의록을 결정 사항·할 일 중심으로 요약
+phuryn/pm-skills/pm-execution/skills/test-scenarios	테스트·디버깅	사용자 스토리로 테스트 시나리오 작성
+phuryn/pm-skills/pm-execution/skills/user-stories	업무·생산성	인수 조건을 갖춘 사용자 스토리 작성
+phuryn/pm-skills/pm-execution/skills/wwas	업무·생산성	왜·무엇·인수조건 형식의 백로그 항목 작성
+phuryn/pm-skills/pm-go-to-market/skills/beachhead-segment	글쓰기·마케팅	출시 때 가장 먼저 공략할 고객층 고르기
+phuryn/pm-skills/pm-go-to-market/skills/competitive-battlecard	글쓰기·마케팅	영업용 경쟁사 비교표(배틀카드)
+phuryn/pm-skills/pm-go-to-market/skills/growth-loops	글쓰기·마케팅	입소문·추천 등 성장 고리(플라이휠) 찾기
+phuryn/pm-skills/pm-go-to-market/skills/gtm-motions	글쓰기·마케팅	인바운드·아웃바운드 등 시장 진입 방식 고르기
+phuryn/pm-skills/pm-go-to-market/skills/gtm-strategy	글쓰기·마케팅	채널·메시지·지표·일정을 담은 시장 진입 전략
+phuryn/pm-skills/pm-go-to-market/skills/ideal-customer-profile	글쓰기·마케팅	조사 자료로 이상적인 고객상(ICP) 정의
+phuryn/pm-skills/pm-market-research/skills/competitor-analysis	글쓰기·마케팅	경쟁사 강점·약점·차별화 기회 분석
+phuryn/pm-skills/pm-market-research/skills/customer-journey-map	글쓰기·마케팅	고객 여정 지도(단계·접점·불편)
+phuryn/pm-skills/pm-market-research/skills/market-segments	글쓰기·마케팅	잠재 고객군 3~5개 찾기
+phuryn/pm-skills/pm-market-research/skills/market-sizing	데이터·분석	TAM·SAM·SOM 시장 규모 추정
+phuryn/pm-skills/pm-market-research/skills/sentiment-analysis	데이터·분석	사용자 피드백 감정·만족도 분석
+phuryn/pm-skills/pm-market-research/skills/user-personas	글쓰기·마케팅	조사 자료로 사용자 페르소나 3개 만들기
+phuryn/pm-skills/pm-market-research/skills/user-segmentation	데이터·분석	행동·필요로 사용자 군 나누기
+phuryn/pm-skills/pm-marketing-growth/skills/marketing-ideas	글쓰기·마케팅	돈 적게 드는 마케팅 아이디어 5개
+phuryn/pm-skills/pm-marketing-growth/skills/north-star-metric	데이터·분석	북극성 지표와 보조 지표 정하기
+phuryn/pm-skills/pm-marketing-growth/skills/positioning-ideas	글쓰기·마케팅	경쟁사와 다른 제품 포지셔닝 아이디어
+phuryn/pm-skills/pm-marketing-growth/skills/product-name	글쓰기·마케팅	기억에 남는 제품 이름 후보 5개
+phuryn/pm-skills/pm-marketing-growth/skills/value-prop-statements	글쓰기·마케팅	마케팅·영업용 가치 제안 문장
+JimLiu/baoyu-skills/.claude/skills/release-skills	개발·코딩	버전 파일·변경 기록을 찾아 릴리스 자동 진행
+JimLiu/baoyu-skills/skills/baoyu-article-illustrator	디자인·이미지	글 구조를 보고 필요한 곳에 삽화 생성
+JimLiu/baoyu-skills/skills/baoyu-comic	디자인·이미지	여러 화풍의 교육용 지식 만화 만들기
+JimLiu/baoyu-skills/skills/baoyu-compress-image	디자인·이미지	이미지를 WebP·PNG로 압축
+JimLiu/baoyu-skills/skills/baoyu-cover-image	디자인·이미지	글 대표 이미지(커버) 생성, 색·스타일 조합

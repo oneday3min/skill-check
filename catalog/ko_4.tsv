@@ -1,0 +1,135 @@
+coreyhaines31/marketingskills/skills/lead-magnets	글쓰기·마케팅	메일 주소를 모으는 리드 마그넷(무료 자료) 기획
+github/awesome-copilot/skills/aspire	개발·코딩	.NET Aspire로 여러 서비스 앱 구성·실행
+alirezarezvani/claude-skills/agent-launcher/skills/agent-launcher-orchestrator	AI·에이전트	내 Anthropic 계정에 관리형 에이전트 만들기·실행·예약
+alirezarezvani/claude-skills/agent-launcher/skills/grade-iterate	AI·에이전트	관리형 에이전트 결과를 채점하고 고치기 반복(3단계)
+alirezarezvani/claude-skills/agent-launcher/skills/interview	AI·에이전트	에이전트가 할 일을 인터뷰로 정리(1단계)
+alirezarezvani/claude-skills/agent-launcher/skills/run-without-you	AI·에이전트	완성한 에이전트를 예약·이벤트로 자동 실행(4단계)
+alirezarezvani/claude-skills/agent-launcher/skills/stage-launch	AI·에이전트	설계서를 실제 API 호출로 바꿔 에이전트 띄우기(2단계)
+alirezarezvani/claude-skills/agent-launcher/skills/wrap-up	AI·에이전트	띄운 에이전트 정리·요약 페이지 만들기
+alirezarezvani/claude-skills/business-growth/skills/business-growth-skills	업무·생산성	고객 성공·영업 등 성장 스킬 4개 길잡이
+alirezarezvani/claude-skills/business-growth/skills/contract-and-proposal-writer	문서·오피스	프리랜서 계약서·제안서·NDA 초안(법률 검토는 따로)
+alirezarezvani/claude-skills/business-growth/skills/customer-success-manager	데이터·분석	고객 건강도·이탈 위험 점수 매기기(SaaS)
+alirezarezvani/claude-skills/business-growth/skills/revenue-operations	데이터·분석	영업 파이프라인·매출 예측 점검
+alirezarezvani/claude-skills/business-growth/skills/sales-engineer	업무·생산성	RFP 답변 빈틈·경쟁 기능 비교표·POC 계획
+alirezarezvani/claude-skills/business-operations/skills/business-operations-skills	업무·생산성	사내 운영(프로세스·SLA·SOP) 스킬 길잡이
+alirezarezvani/claude-skills/business-operations/skills/capacity-planner	업무·생산성	지원·운영팀 인력 규모 계획
+alirezarezvani/claude-skills/business-operations/skills/internal-comms	글쓰기·마케팅	사내 변화 공지를 순서 있게 작성
+alirezarezvani/claude-skills/business-operations/skills/knowledge-ops	문서·오피스	회사 업무 매뉴얼(SOP)·런북 작성·정리
+alirezarezvani/claude-skills/business-operations/skills/process-mapper	업무·생산성	업무 흐름(구매·입사 등) 처음부터 끝까지 문서화
+alirezarezvani/claude-skills/business-operations/skills/procurement-optimizer	데이터·분석	SaaS 구독·지출 감사로 비용 줄이기
+alirezarezvani/claude-skills/business-operations/skills/vendor-management	업무·생산성	외부 업체·SaaS 평가표와 SLA 관리
+alirezarezvani/claude-skills/c-level-advisor/executive-mentor/skills/board-prep	업무·생산성	어려운 이사회 질문에 대비한 준비
+alirezarezvani/claude-skills/c-level-advisor/executive-mentor/skills/challenge	업무·생산성	"1년 뒤 실패했다면?" 계획 약점 찾기
+alirezarezvani/claude-skills/c-level-advisor/executive-mentor/skills/executive-mentor	업무·생산성	창업자·경영진의 계획을 일부러 반박해 주는 멘토
+alirezarezvani/claude-skills/c-level-advisor/executive-mentor/skills/hard-call	업무·생산성	좋은 선택지가 없을 때 결정하는 틀
+alirezarezvani/claude-skills/c-level-advisor/executive-mentor/skills/postmortem	업무·생산성	실패 원인 회고(5 Whys, 비난 없이)
+alirezarezvani/claude-skills/c-level-advisor/executive-mentor/skills/stress-test	업무·생산성	검증 안 된 사업 가정 압박 시험
+alirezarezvani/claude-skills/c-level-advisor/skills/agent-protocol	AI·에이전트	경영진 역할 에이전트끼리 주고받는 규칙
+alirezarezvani/claude-skills/c-level-advisor/skills/arquiteto-de-empresa	업무·생산성	회사 구조를 버전 관리되는 문서 묶음으로 설계
+alirezarezvani/claude-skills/c-level-advisor/skills/board-deck-builder	문서·오피스	이사회·투자자 업데이트 자료 만들기
+alirezarezvani/claude-skills/c-level-advisor/skills/board-meeting	업무·생산성	경영진 역할 에이전트들의 6단계 전략 회의
+alirezarezvani/claude-skills/c-level-advisor/skills/c-level-skills	업무·생산성	경영진 자문 스킬 33개 길잡이
+alirezarezvani/claude-skills/c-level-advisor/skills/ceo-advisor	업무·생산성	CEO 관점 전략·조직·이해관계자 조언
+alirezarezvani/claude-skills/c-level-advisor/skills/cfo-advisor	데이터·분석	CFO 관점 재무 모델·자금 조달·현금 관리
+alirezarezvani/claude-skills/c-level-advisor/skills/change-management	업무·생산성	조직 변화를 혼란 없이 진행하는 틀(ADKAR)
+alirezarezvani/claude-skills/c-level-advisor/skills/chief-ai-officer-advisor	AI·에이전트	AI 도입 결정(API·미세조정·자체 개발)과 규제 위험
+alirezarezvani/claude-skills/c-level-advisor/skills/chief-customer-officer-advisor	업무·생산성	고객 유지율·이탈 원인 분석 조언
+alirezarezvani/claude-skills/c-level-advisor/skills/chief-data-officer-advisor	데이터·분석	데이터 전략과 AI 학습 데이터 권리 조언
+alirezarezvani/claude-skills/c-level-advisor/skills/chief-of-staff	업무·생산성	질문을 알맞은 경영진 역할로 넘기는 비서실장
+alirezarezvani/claude-skills/c-level-advisor/skills/chro-advisor	업무·생산성	채용·보상·조직문화 조언
+alirezarezvani/claude-skills/c-level-advisor/skills/ciso-advisor	보안	보안 위험을 돈으로 환산·인증 로드맵(SOC 2 등)
+alirezarezvani/claude-skills/c-level-advisor/skills/cmo-advisor	글쓰기·마케팅	CMO 관점 브랜드·성장 모델·예산 배분
+alirezarezvani/claude-skills/c-level-advisor/skills/company-os	업무·생산성	회사 운영 체계(EOS·OKR 등) 고르기
+OthmanAdi/planning-with-files/skills/planning-with-files	AI·에이전트	계획·발견·진행 상황을 파일로 남겨 긴 작업 이어 가기
+JimLiu/baoyu-skills/skills/baoyu-post-to-x	연동·API	X(트위터)에 글·이미지·긴 글 올리기
+Orchestra-Research/AI-Research-SKILLs/03-fine-tuning/axolotl	AI·에이전트	Axolotl로 LLM 미세조정(YAML 설정)
+Orchestra-Research/AI-Research-SKILLs/07-safety-alignment/prompt-guard	보안	Meta Prompt Guard로 프롬프트 주입·탈옥 탐지
+Orchestra-Research/AI-Research-SKILLs/09-infrastructure/lambda-labs	개발·코딩	Lambda Labs GPU 클라우드 사용
+Jeffallan/claude-skills/skills/kubernetes-specialist	개발·코딩	쿠버네티스 배포·보안 설정
+sickn33/agentic-awesome-skills/skills/007	보안	보안 감사·위협 모델링·레드/블루팀 점검
+sickn33/agentic-awesome-skills/skills/agent-creator	AI·에이전트	맞춤 하위 에이전트 만들기
+garrytan/gstack/careful	보안	위험한 삭제 명령 전에 경고하는 안전장치
+garrytan/gstack/openclaw/skills/gstack-openclaw-retro	개발·코딩	커밋 기록으로 주간 개발 회고(OpenClaw용)
+mvanhorn/last30days-skill/skills/last30days	데이터·분석	최근 30일 레딧·X·유튜브 반응 조사
+irinabuht12-oss/marketing-skills/skills/ab-test-analyzer	데이터·분석	A/B 테스트 유의성 계산
+irinabuht12-oss/marketing-skills/skills/ab-test-setup-and-analysis	데이터·분석	광고·랜딩 A/B 테스트 설계와 분석
+irinabuht12-oss/marketing-skills/skills/account-structure-review	글쓰기·마케팅	광고 계정 캠페인 구조 점검
+irinabuht12-oss/marketing-skills/skills/ad-copy-variant-generator	글쓰기·마케팅	잘된 광고를 분석해 새 문구 변형 만들기
+irinabuht12-oss/marketing-skills/skills/ad-extension-audit	글쓰기·마케팅	구글 광고 확장(사이트링크 등) 점검
+irinabuht12-oss/marketing-skills/skills/ad-spend-allocator	데이터·분석	여러 채널 광고 예산 배분 최적화
+irinabuht12-oss/marketing-skills/skills/ai-visibility-audit	글쓰기·마케팅	ChatGPT 등 AI 답변에 우리 브랜드가 나오는지 점검
+irinabuht12-oss/marketing-skills/skills/anomaly-detection	데이터·분석	광고 성과 이상 변화(CPC 급등 등) 감지
+irinabuht12-oss/marketing-skills/skills/attribution-model-comparison	데이터·분석	여러 기여 모델로 전환 데이터 비교
+irinabuht12-oss/marketing-skills/skills/audience-overlap-analysis	데이터·분석	메타 광고 타깃 겹침 분석
+irinabuht12-oss/marketing-skills/skills/bid-strategy-recommendations	글쓰기·마케팅	캠페인별 입찰 전략 추천
+irinabuht12-oss/marketing-skills/skills/brand-answer-monitoring	글쓰기·마케팅	AI 비서가 우리 브랜드를 어떻게 말하는지 추적
+irinabuht12-oss/marketing-skills/skills/budget-scenario-planner	데이터·분석	광고 예산 증감 시나리오 예측
+irinabuht12-oss/marketing-skills/skills/campaign-naming-convention-builder	글쓰기·마케팅	캠페인 이름 규칙 만들기
+irinabuht12-oss/marketing-skills/skills/channel-mix-optimizer	데이터·분석	채널별 예산 비율 추천
+irinabuht12-oss/marketing-skills/skills/citation-source-gap-finder	글쓰기·마케팅	AI가 인용하는 페이지를 찾아 우리가 들어갈 곳 찾기
+irinabuht12-oss/marketing-skills/skills/client-report-narratives	문서·오피스	광고 성과 보고서 요약 문단 작성
+irinabuht12-oss/marketing-skills/skills/competitor-creative-analysis	글쓰기·마케팅	경쟁사 광고 소재 분석(광고 라이브러리)
+irinabuht12-oss/marketing-skills/skills/competitor-teardown	글쓰기·마케팅	경쟁사 랜딩 페이지 메시지·CTA 분석
+irinabuht12-oss/marketing-skills/skills/content-aeo-optimizer	글쓰기·마케팅	AI가 인용하기 좋게 글 구조 바꾸기
+irinabuht12-oss/marketing-skills/skills/content-repurposer	글쓰기·마케팅	긴 글 하나를 SNS·메일용 여러 조각으로
+irinabuht12-oss/marketing-skills/skills/conversion-path-analysis	데이터·분석	광고 클릭부터 전환까지 이탈 지점 분석
+irinabuht12-oss/marketing-skills/skills/cpa-diagnostics	데이터·분석	CPA가 갑자기 오른 원인 찾기
+irinabuht12-oss/marketing-skills/skills/creative-fatigue-detection	데이터·분석	광고 소재 피로도 조기 감지
+irinabuht12-oss/marketing-skills/skills/day-hour-performance-breakdown	데이터·분석	요일·시간대별 광고 성과 분석
+irinabuht12-oss/marketing-skills/skills/device-performance-split	데이터·분석	기기별(모바일·PC) 광고 성과 분석
+irinabuht12-oss/marketing-skills/skills/e2e-seo-assistant	글쓰기·마케팅	SEO 전체 점검(기술·콘텐츠·백링크)
+irinabuht12-oss/marketing-skills/skills/email-sequence-writer	글쓰기·마케팅	잠재 고객 육성 메일 시리즈 작성
+irinabuht12-oss/marketing-skills/skills/frequency-cap-recommendations	글쓰기·마케팅	메타 광고 노출 빈도 상한 추천
+irinabuht12-oss/marketing-skills/skills/geo-performance-analysis	데이터·분석	지역별 광고 성과 분석
+irinabuht12-oss/marketing-skills/skills/google-ads-audit	글쓰기·마케팅	구글 광고 계정 종합 점검
+irinabuht12-oss/marketing-skills/skills/icp-research-assistant	글쓰기·마케팅	B2B 구매자 페르소나 조사
+irinabuht12-oss/marketing-skills/skills/keyword-cannibalization-check	글쓰기·마케팅	구글 광고 키워드끼리 경쟁하는지 확인
+irinabuht12-oss/marketing-skills/skills/landing-page-audit-39	글쓰기·마케팅	랜딩 페이지 전환율 점검
+irinabuht12-oss/marketing-skills/skills/landing-page-audit	글쓰기·마케팅	광고와 랜딩 페이지 메시지 일치 점검
+irinabuht12-oss/marketing-skills/skills/linkedin-ads-audit	글쓰기·마케팅	링크드인 광고 캠페인 점검
+irinabuht12-oss/marketing-skills/skills/meta-ads-audit	글쓰기·마케팅	메타(페이스북·인스타) 광고 점검
+irinabuht12-oss/marketing-skills/skills/pacing-monitor	데이터·분석	월 예산 대비 광고비 소진 속도 추적
+irinabuht12-oss/marketing-skills/skills/performance-benchmarking	데이터·분석	업종 평균과 광고 지표 비교
+irinabuht12-oss/marketing-skills/skills/programmatic-seo-builder	글쓰기·마케팅	대량 SEO 페이지 템플릿 설계
+chuspeeism/dashi-ppt-skill/skills/dashi-ppt	문서·오피스	테마로 브라우저에서 편집되는 발표 자료 만들기(PPTX·PDF 내보내기)
+op7418/guizang-social-card-skill/(root)	디자인·이미지	SNS용 카드 이미지 세트·라이브 포토 만들기
+trailofbits/skills/plugins/agentic-actions-auditor/skills/agentic-actions-auditor	보안	AI 에이전트가 들어간 GitHub Actions 보안 점검
+trailofbits/skills/plugins/audit-context-building/skills/audit-context-building	보안	버그 찾기 전에 코드의 가정·의존 관계 파악
+trailofbits/skills/plugins/building-secure-contracts/skills/algorand-vulnerability-scanner	보안	Algorand 스마트 계약 취약점 검사
+trailofbits/skills/plugins/building-secure-contracts/skills/audit-prep-assistant	보안	보안 감사 받기 전 준비
+trailofbits/skills/plugins/building-secure-contracts/skills/cairo-vulnerability-scanner	보안	Cairo(StarkNet) 계약 취약점 검사
+trailofbits/skills/plugins/building-secure-contracts/skills/code-maturity-assessor	보안	코드 성숙도 9개 항목 평가
+trailofbits/skills/plugins/building-secure-contracts/skills/cosmos-vulnerability-scanner	보안	Cosmos SDK 모듈 취약점 검사
+trailofbits/skills/plugins/building-secure-contracts/skills/guidelines-advisor	보안	스마트 계약 개발 모범 사례 조언
+trailofbits/skills/plugins/building-secure-contracts/skills/secure-workflow-guide	보안	스마트 계약 안전 개발 5단계(Slither 등)
+trailofbits/skills/plugins/building-secure-contracts/skills/solana-vulnerability-scanner	보안	Solana 프로그램 취약점 검사
+trailofbits/skills/plugins/building-secure-contracts/skills/substrate-vulnerability-scanner	보안	Substrate(Polkadot) 취약점 검사
+trailofbits/skills/plugins/building-secure-contracts/skills/token-integration-analyzer	보안	토큰(ERC20 등) 구현·연동 점검
+trailofbits/skills/plugins/building-secure-contracts/skills/ton-vulnerability-scanner	보안	TON 계약 취약점 검사
+trailofbits/skills/plugins/burpsuite-project-parser/skills/burpsuite-project-parser	보안	Burp Suite 프로젝트 파일 검색
+trailofbits/skills/plugins/c-review/skills/c-review	보안	C/C++ 메모리·정수 오버플로 보안 리뷰
+trailofbits/skills/plugins/claude-in-chrome-troubleshooting/skills/chrome-mcp-troubleshooting	테스트·디버깅	Claude in Chrome 확장 연결 문제 해결
+trailofbits/skills/plugins/code-improver/skills/code-improver	개발·코딩	리뷰→수정 반복으로 코드 개선
+trailofbits/skills/plugins/code-improver/skills/pr-improver	개발·코딩	PR 리뷰가 깨끗해질 때까지 반복 수정
+trailofbits/skills/plugins/code-improver/skills/skill-improver	AI·에이전트	스킬 리뷰→수정 반복 개선
+trailofbits/skills/plugins/constant-time-analysis/skills/constant-time-analysis	보안	암호 코드의 타이밍 공격 취약점 찾기
+trailofbits/skills/plugins/culture-index/skills/interpreting-culture-index	업무·생산성	Culture Index 성향 검사 결과 해석
+trailofbits/skills/plugins/devcontainer-setup/skills/devcontainer-setup	개발·코딩	Claude Code가 든 개발 컨테이너 만들기
+trailofbits/skills/plugins/differential-review/skills/differential-review	보안	변경 코드 중심 보안 리뷰
+trailofbits/skills/plugins/dimensional-analysis/skills/dimensional-analysis	개발·코딩	코드에 단위·차원 주석 달기
+trailofbits/skills/plugins/dwarf-expert/skills/dwarf-expert	개발·코딩	컴파일된 파일의 DWARF 디버그 정보 분석
+trailofbits/skills/plugins/entry-point-analyzer/skills/entry-point-analyzer	보안	스마트 계약의 상태 바꾸는 진입점 찾기
+trailofbits/skills/plugins/firebase-apk-scanner/skills/firebase-apk-scanner	보안	안드로이드 앱의 Firebase 설정 오류 검사
+trailofbits/skills/plugins/fp-check/skills/fp-check	보안	보안 버그가 진짜인지 오탐인지 검증
+trailofbits/skills/plugins/gh-cli/skills/gh-cli	개발·코딩	GitHub 작업을 인증된 gh CLI로 하게 함
+trailofbits/skills/plugins/github-triage/skills/github-triage	개발·코딩	GitHub 이슈·PR 분류와 정리
+trailofbits/skills/plugins/goal-prompt/skills/goal-prompt	AI·에이전트	Claude Code·Codex용 /goal 명령 작성
+trailofbits/skills/plugins/let-fate-decide/skills/let-fate-decide	업무·생산성	막연한 계획에 타로 카드로 무작위성 더하기(재미용)
+trailofbits/skills/plugins/modern-cpp/skills/modern-cpp	개발·코딩	최신 C++(20/23/26) 방식으로 코드 쓰기
+trailofbits/skills/plugins/modern-python/skills/modern-python	개발·코딩	uv·ruff 등 최신 도구로 파이썬 프로젝트 설정
+trailofbits/skills/plugins/mutation-testing/skills/mutation-testing	테스트·디버깅	뮤테이션 테스트로 테스트 빈틈 찾기
+trailofbits/skills/plugins/open-sourcing/skills/open-sourcing	개발·코딩	저장소를 공개하기 전 점검(비밀·라이선스 등)
+trailofbits/skills/plugins/post-patch-validation/skills/post-patch-validation	보안	보안 패치가 제대로 막았는지 검증
+trailofbits/skills/plugins/property-based-testing/skills/property-based-testing	테스트·디버깅	속성 기반 테스트(Hypothesis 등) 작성
+trailofbits/skills/plugins/review-walkthrough/skills/review-walkthrough	개발·코딩	코드 변경 리뷰용 대화형 HTML 안내
+trailofbits/skills/plugins/rust-review/skills/rust-review	보안	Rust unsafe·동시성 보안 리뷰

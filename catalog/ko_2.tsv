@@ -1,0 +1,159 @@
+JimLiu/baoyu-skills/skills/baoyu-danger-gemini-web	디자인·이미지	비공식(역설계) Gemini 웹 API로 이미지·글 생성 — 약관 위험
+JimLiu/baoyu-skills/skills/baoyu-danger-x-to-markdown	연동·API	비공식 API로 X 글을 마크다운으로 저장 — 약관 위험
+JimLiu/baoyu-skills/skills/baoyu-diagram	디자인·이미지	구조도·순서도·마인드맵 등 SVG 다이어그램
+JimLiu/baoyu-skills/skills/baoyu-electron-extract	개발·코딩	설치된 Electron 앱에서 소스·자원 꺼내기
+JimLiu/baoyu-skills/skills/baoyu-format-markdown	문서·오피스	글을 제목·요약·목록이 갖춰진 마크다운으로 정리
+JimLiu/baoyu-skills/skills/baoyu-image-gen	디자인·이미지	OpenAI·구글 등 여러 이미지 생성 API로 그림 만들기(각 API 키 필요)
+JimLiu/baoyu-skills/skills/baoyu-infographic	디자인·이미지	21가지 레이아웃·22가지 스타일 인포그래픽 생성
+JimLiu/baoyu-skills/skills/baoyu-markdown-to-html	문서·오피스	마크다운을 위챗용 스타일 HTML로 변환
+JimLiu/baoyu-skills/skills/baoyu-post-to-wechat	연동·API	위챗 공식 계정에 글 올리기
+JimLiu/baoyu-skills/skills/baoyu-slide-deck	문서·오피스	내용으로 슬라이드 이미지 묶음 생성
+JimLiu/baoyu-skills/skills/baoyu-translate	글쓰기·마케팅	글 번역(중·영 중심, 정밀 번역 모드)
+JimLiu/baoyu-skills/skills/baoyu-url-to-markdown	연동·API	웹 주소(X·유튜브 자막 등)를 마크다운으로 가져오기
+JimLiu/baoyu-skills/skills/baoyu-wechat-summary	업무·생산성	위챗 단톡방 대화 요약
+JimLiu/baoyu-skills/skills/baoyu-xhs-images	디자인·이미지	SNS용 카드 이미지 시리즈(샤오훙수 스타일)
+JimLiu/baoyu-skills/skills/baoyu-youtube-transcript	연동·API	유튜브 자막·썸네일 내려받기
+AgriciDaniel/claude-obsidian/skills/autoresearch	업무·생산성	출처를 단 조사 보고서를 만들어 옵시디언에 정리
+AgriciDaniel/claude-obsidian/skills/canvas	업무·생산성	옵시디언 캔버스 보드 만들기·수정
+AgriciDaniel/claude-obsidian/skills/defuddle	연동·API	웹 기사 본문만 깔끔하게 마크다운으로 추출(동의 시 외부 서비스)
+AgriciDaniel/claude-obsidian/skills/obsidian-bases	업무·생산성	옵시디언 Bases(데이터베이스 보기) 파일 작성
+AgriciDaniel/claude-obsidian/skills/obsidian-markdown	문서·오피스	옵시디언 마크다운 문법(링크·콜아웃 등) 작성·검사
+AgriciDaniel/claude-obsidian/skills/save	업무·생산성	대화 속 결정·인사이트를 옵시디언 노트로 저장
+AgriciDaniel/claude-obsidian/skills/think	업무·생산성	중요하거나 애매한 결정을 10단계로 생각 정리
+AgriciDaniel/claude-obsidian/skills/wiki-cli	업무·생산성	옵시디언 공식 CLI로 보관함 읽기·검색
+AgriciDaniel/claude-obsidian/skills/wiki-fold	업무·생산성	최근 위키 기록을 묶어 요약
+AgriciDaniel/claude-obsidian/skills/wiki-ingest	업무·생산성	자료를 출처와 함께 옵시디언 위키에 넣기
+AgriciDaniel/claude-obsidian/skills/wiki-lint	업무·생산성	옵시디언 위키 점검(끊긴 링크·고아 노트)
+AgriciDaniel/claude-obsidian/skills/wiki-mode	업무·생산성	PARA·제텔카스텐 등 노트 정리 방식 설정
+AgriciDaniel/claude-obsidian/skills/wiki-query	업무·생산성	내 옵시디언 위키만 근거로 질문에 답하기
+AgriciDaniel/claude-obsidian/skills/wiki-retrieve	업무·생산성	옵시디언 보관함 검색 색인 만들기
+AgriciDaniel/claude-obsidian/skills/wiki	업무·생산성	옵시디언 지식 보관함 시작·구성
+Orchestra-Research/AI-Research-SKILLs/0-autoresearch-skill	AI·에이전트	AI 연구 프로젝트를 실험 반복으로 자율 진행
+Orchestra-Research/AI-Research-SKILLs/01-model-architecture/litgpt	AI·에이전트	LitGPT로 LLM 구현·학습(Llama·Gemma 등)
+Orchestra-Research/AI-Research-SKILLs/01-model-architecture/mamba	AI·에이전트	Mamba(상태공간 모델) 사용 가이드
+Orchestra-Research/AI-Research-SKILLs/01-model-architecture/nanogpt	AI·에이전트	300줄짜리 교육용 GPT로 트랜스포머 배우기
+Orchestra-Research/AI-Research-SKILLs/01-model-architecture/rwkv	AI·에이전트	RWKV(RNN+트랜스포머) 모델 사용 가이드
+Orchestra-Research/AI-Research-SKILLs/01-model-architecture/torchtitan	AI·에이전트	torchtitan으로 LLM 분산 사전학습
+Orchestra-Research/AI-Research-SKILLs/02-tokenization/huggingface-tokenizers	AI·에이전트	허깅페이스 토크나이저 학습·사용
+Orchestra-Research/AI-Research-SKILLs/02-tokenization/sentencepiece	AI·에이전트	SentencePiece 토크나이저 사용
+Orchestra-Research/AI-Research-SKILLs/03-fine-tuning/llama-factory	AI·에이전트	LLaMA-Factory로 코딩 없이 LLM 미세조정
+Orchestra-Research/AI-Research-SKILLs/03-fine-tuning/peft	AI·에이전트	LoRA·QLoRA로 적은 GPU로 미세조정(PEFT)
+Orchestra-Research/AI-Research-SKILLs/03-fine-tuning/unsloth	AI·에이전트	Unsloth로 빠르고 가볍게 미세조정
+Orchestra-Research/AI-Research-SKILLs/04-mechanistic-interpretability/nnsight	AI·에이전트	nnsight로 신경망 내부 들여다보기
+Orchestra-Research/AI-Research-SKILLs/04-mechanistic-interpretability/pyvene	AI·에이전트	pyvene으로 모델 내부 인과 개입 실험
+Orchestra-Research/AI-Research-SKILLs/04-mechanistic-interpretability/saelens	AI·에이전트	희소 오토인코더(SAE)로 모델 특징 분석
+Orchestra-Research/AI-Research-SKILLs/04-mechanistic-interpretability/transformer-lens	AI·에이전트	TransformerLens로 트랜스포머 내부 분석
+Orchestra-Research/AI-Research-SKILLs/05-data-processing/nemo-curator	데이터·분석	LLM 학습 데이터 정제·중복 제거(GPU)
+Orchestra-Research/AI-Research-SKILLs/05-data-processing/ray-data	데이터·분석	Ray Data로 대용량 ML 데이터 처리
+Orchestra-Research/AI-Research-SKILLs/06-post-training/grpo-rl-training	AI·에이전트	TRL로 GRPO 강화학습 미세조정
+Orchestra-Research/AI-Research-SKILLs/06-post-training/miles	AI·에이전트	miles로 대형 MoE 모델 강화학습
+Orchestra-Research/AI-Research-SKILLs/06-post-training/openrlhf	AI·에이전트	OpenRLHF로 PPO·DPO 등 RLHF 학습
+Orchestra-Research/AI-Research-SKILLs/06-post-training/simpo	AI·에이전트	SimPO로 참조 모델 없이 선호 학습
+Orchestra-Research/AI-Research-SKILLs/06-post-training/slime	AI·에이전트	slime으로 LLM 강화학습 후처리
+Orchestra-Research/AI-Research-SKILLs/06-post-training/torchforge	AI·에이전트	torchforge로 에이전트 강화학습
+Orchestra-Research/AI-Research-SKILLs/06-post-training/trl-fine-tuning	AI·에이전트	TRL로 SFT·DPO·PPO 미세조정
+Orchestra-Research/AI-Research-SKILLs/06-post-training/verl	AI·에이전트	verl로 LLM 강화학습(RLHF·GRPO)
+Orchestra-Research/AI-Research-SKILLs/07-safety-alignment/constitutional-ai	AI·에이전트	헌법적 AI(자기 비판·RLAIF) 학습 방법
+Orchestra-Research/AI-Research-SKILLs/07-safety-alignment/llamaguard	AI·에이전트	LlamaGuard로 AI 입력·출력 유해성 걸러내기
+Orchestra-Research/AI-Research-SKILLs/07-safety-alignment/nemo-guardrails	AI·에이전트	NeMo Guardrails로 탈옥·환각·개인정보 차단
+Orchestra-Research/AI-Research-SKILLs/08-distributed-training/accelerate	AI·에이전트	Accelerate로 몇 줄 만에 분산 학습
+Orchestra-Research/AI-Research-SKILLs/08-distributed-training/deepspeed	AI·에이전트	DeepSpeed 분산 학습(ZeRO 등)
+Orchestra-Research/AI-Research-SKILLs/08-distributed-training/megatron-core	AI·에이전트	Megatron-Core로 초대형 LLM 학습
+Orchestra-Research/AI-Research-SKILLs/08-distributed-training/pytorch-fsdp2	AI·에이전트	PyTorch FSDP2로 큰 모델 나눠 학습
+Orchestra-Research/AI-Research-SKILLs/08-distributed-training/pytorch-lightning	AI·에이전트	PyTorch Lightning으로 학습 코드 간단히
+Orchestra-Research/AI-Research-SKILLs/08-distributed-training/ray-train	AI·에이전트	Ray Train으로 클러스터 분산 학습
+Orchestra-Research/AI-Research-SKILLs/09-infrastructure/modal	개발·코딩	Modal 서버리스 GPU로 ML 작업 실행
+Orchestra-Research/AI-Research-SKILLs/09-infrastructure/skypilot	개발·코딩	SkyPilot으로 여러 클라우드에서 싸게 GPU 작업
+Orchestra-Research/AI-Research-SKILLs/10-optimization/awq	AI·에이전트	AWQ 4비트 양자화로 LLM 가볍게
+Jeffallan/claude-skills/skills/angular-architect	개발·코딩	Angular 17+ 컴포넌트·라우팅·상태 관리
+Jeffallan/claude-skills/skills/api-designer	개발·코딩	REST·GraphQL API와 OpenAPI 명세 설계
+Jeffallan/claude-skills/skills/architecture-designer	개발·코딩	시스템 구조 설계·검토·결정 기록
+Jeffallan/claude-skills/skills/atlassian-mcp	연동·API	MCP로 Jira·Confluence 조회·작성
+Jeffallan/claude-skills/skills/chaos-engineer	테스트·디버깅	일부러 장애를 내 보는 카오스 실험 설계
+Jeffallan/claude-skills/skills/cli-developer	개발·코딩	명령줄 도구(CLI) 만들기
+Jeffallan/claude-skills/skills/cloud-architect	개발·코딩	AWS·Azure·GCP 구조·이전·재해 복구 설계
+Jeffallan/claude-skills/skills/code-documenter	문서·오피스	코드 주석·API 문서·사용 설명서 작성
+Jeffallan/claude-skills/skills/code-reviewer	개발·코딩	변경 코드에서 버그·보안 취약점·나쁜 냄새 찾기
+Jeffallan/claude-skills/skills/cpp-pro	개발·코딩	최신 C++20/23 개발·최적화
+Jeffallan/claude-skills/skills/csharp-developer	개발·코딩	C#·.NET 8·ASP.NET Core 개발
+Jeffallan/claude-skills/skills/database-optimizer	데이터·분석	PostgreSQL·MySQL 느린 쿼리 개선
+Jeffallan/claude-skills/skills/debugging-wizard	테스트·디버깅	오류 메시지·로그로 원인 추적
+Jeffallan/claude-skills/skills/devops-engineer	개발·코딩	Docker·CI/CD·쿠버네티스·Terraform 설정
+Jeffallan/claude-skills/skills/django-expert	개발·코딩	Django 웹앱·REST API 개발
+Jeffallan/claude-skills/skills/django-storages-s3	개발·코딩	Django 파일을 AWS S3에 저장
+Jeffallan/claude-skills/skills/dotnet-core-expert	개발·코딩	.NET 8 API·클린 아키텍처 개발
+Jeffallan/claude-skills/skills/embedded-systems	개발·코딩	마이크로컨트롤러 펌웨어(STM32·ESP32) 개발
+Jeffallan/claude-skills/skills/fastapi-expert	개발·코딩	FastAPI·Pydantic 비동기 API 개발
+Jeffallan/claude-skills/skills/feature-forge	업무·생산성	요구사항 워크숍으로 기능 명세·사용자 스토리 작성
+Jeffallan/claude-skills/skills/fine-tuning-expert	AI·에이전트	LLM 미세조정(LoRA·학습 데이터 준비)
+Jeffallan/claude-skills/skills/flutter-expert	개발·코딩	Flutter 크로스플랫폼 앱 개발
+Jeffallan/claude-skills/skills/fullstack-guardian	보안	보안을 층마다 넣은 풀스택 웹앱 개발
+Jeffallan/claude-skills/skills/game-developer	개발·코딩	Unity·Unreal 게임 기능 개발
+Jeffallan/claude-skills/skills/golang-pro	개발·코딩	Go 동시성·마이크로서비스 개발
+Jeffallan/claude-skills/skills/graphql-architect	개발·코딩	GraphQL 스키마·페더레이션 설계
+Jeffallan/claude-skills/skills/java-architect	개발·코딩	Spring Boot 3 엔터프라이즈 자바 개발
+Jeffallan/claude-skills/skills/javascript-pro	개발·코딩	최신 자바스크립트·Node.js 개발
+Jeffallan/claude-skills/skills/kotlin-specialist	개발·코딩	코틀린 코루틴·Compose·Ktor 개발
+Jeffallan/claude-skills/skills/laravel-specialist	개발·코딩	Laravel 10+ 웹앱 개발
+Jeffallan/claude-skills/skills/legacy-modernizer	개발·코딩	오래된 코드를 단계적으로 현대화
+Jeffallan/claude-skills/skills/mcp-developer	연동·API	MCP 서버·클라이언트 만들기·디버깅
+Jeffallan/claude-skills/skills/microservices-architect	개발·코딩	모놀리스를 마이크로서비스로 나누는 설계
+Jeffallan/claude-skills/skills/ml-pipeline	AI·에이전트	MLflow·Airflow로 ML 파이프라인 구축
+Jeffallan/claude-skills/skills/monitoring-expert	개발·코딩	Prometheus·Grafana 모니터링·알림 설정
+Jeffallan/claude-skills/skills/nestjs-expert	개발·코딩	NestJS 백엔드 개발
+Jeffallan/claude-skills/skills/nextjs-developer	개발·코딩	Next.js 14+ App Router 개발
+Jeffallan/claude-skills/skills/pandas-pro	데이터·분석	pandas 데이터 정리·집계·병합
+Jeffallan/claude-skills/skills/php-pro	개발·코딩	PHP 8.3+·Laravel·Symfony 개발
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/00-andruia-consultant	업무·생산성	스페인어 AI 프로젝트 컨설턴트 역할
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/10-andruia-skill-smith	AI·에이전트	스페인어 스킬 제작 도우미
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/20-andruia-niche-intelligence	업무·생산성	스페인어 업종별 지식·규제 분석
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/2slides-ppt-generator	문서·오피스	2slides API로 발표 자료 생성(외부 유료 서비스)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/360-feedback-system	업무·생산성	360도 다면 평가 기록표 만들기
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/3d-web-experience	개발·코딩	Three.js로 웹 3D 화면 만들기
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/aas-compose-stack	AI·에이전트	고른 스킬 조합을 검증해 저장(AAS 전용)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/aas-discover	AI·에이전트	작업에 맞는 AAS 스킬 찾기·비교
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/aas-review-stack	AI·에이전트	AAS 스킬 조합 검토(AAS 전용)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/ab-test-setup	데이터·분석	A/B 테스트 가설·표본 크기·지표 설계
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/ab-testing	데이터·분석	A/B 테스트·성장 실험 설계
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/acceptance-orchestrator	AI·에이전트	이슈 접수부터 배포·검수까지 AI가 이어서 진행
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/access-matrix	보안	역할별 권한표 만들기
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/access-review	보안	정기 접근 권한 검토
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/accessibility-compliance-accessibility-audit	테스트·디버깅	WCAG 웹 접근성 감사
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/accesslint-audit	테스트·디버깅	WCAG 2.2 접근성 문제 찾고 고치기
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/accesslint-diff	테스트·디버깅	변경 전후 접근성 위반 비교
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/accesslint-scan	테스트·디버깅	실제 페이지 접근성 위반 위치 찾기
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/accint-commitments	AI·에이전트	acc 도구의 미완료 약속 정리(acc 전용)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/accint-frames	AI·에이전트	acc 도구의 대기 작업 처리(acc 전용)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/accint-solve	AI·에이전트	acc 기억 루프로 목표 해결(acc 전용)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/accounting-audit-system-builder	업무·생산성	회계·감사 요청을 알맞은 단계로 안내
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/accounting-software-selection	업무·생산성	회계 소프트웨어 후보 비교 채점
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/active-directory-attacks	보안	액티브 디렉터리 공격 기법(모의해킹용, 허가된 환경에서만)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/activecampaign-automation	연동·API	ActiveCampaign 연락처·자동화 관리(Composio 경유)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/ad-campaign-analyzer	데이터·분석	여러 채널 광고 데이터 분석·예산 시험 제안
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/ad-creative	글쓰기·마케팅	광고 문구·시안 만들기
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/add-app-clip	개발·코딩	Expo 앱에 iOS App Clip 추가
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/address-github-comments	개발·코딩	GitHub PR 리뷰 댓글 처리(gh CLI)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/adhx	연동·API	X 게시물을 정리된 JSON으로 가져오기(외부 서비스)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/admin-access-register	보안	관리자 계정·2FA 현황 기록표
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/advanced-analytics-dashboard	데이터·분석	대시보드 지표 정의표 만들기
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/advanced-evaluation	AI·에이전트	AI 채점자(LLM-as-judge)·평가 기준 만들기
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/advogado-criminal	업무·생산성	브라질 형사법 변호사 역할(포르투갈어)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/advogado-especialista	업무·생산성	브라질 법률 전반 변호사 역할(포르투갈어)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/aegisops-ai	보안	Gemini로 리눅스 패치·클라우드 비용·K8s 규정 점검
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/agent-evals	AI·에이전트	정답 데이터셋으로 AI 에이전트 자동 평가
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/agent-evaluation-reporting	AI·에이전트	에이전트 평가 결과 보고(성공·실패 구분)
+sickn33/agentic-awesome-skills/plugins/agentic-awesome-skills-claude/skills/agent-evaluation	AI·에이전트	시험 사례로 에이전트 동작 평가·회귀 시험
+garrytan/gstack/(root)	AI·에이전트	gstack 스킬 모음 길잡이
+garrytan/gstack/autoplan	업무·생산성	CEO·디자인·개발 리뷰를 차례로 자동 실행
+garrytan/gstack/benchmark-models	AI·에이전트	gstack 스킬을 여러 모델로 비교 시험
+garrytan/gstack/benchmark	테스트·디버깅	웹 성능이 나빠졌는지 감지
+garrytan/gstack/browse	테스트·디버깅	실제 브라우저로 페이지 열고 클릭·캡처·오류 확인
+garrytan/gstack/browser-skills/hackernews-frontpage	연동·API	해커뉴스 첫 화면 글 목록 가져오기
+garrytan/gstack/canary	개발·코딩	배포 직후 문제 감시(카나리)
+garrytan/gstack/codex	AI·에이전트	OpenAI Codex CLI를 불러 쓰기
+garrytan/gstack/context-restore	AI·에이전트	저장해 둔 작업 맥락 불러오기
+garrytan/gstack/context-save	AI·에이전트	지금 작업 맥락 저장
+garrytan/gstack/cso	보안	보안 감사와 수정안 제시
+garrytan/gstack/design-consultation	디자인·이미지	제품을 이해하고 디자인 시스템 전체 제안
+garrytan/gstack/design-html	디자인·이미지	디자인을 실제 HTML·CSS로 완성
+garrytan/gstack/design-review	디자인·이미지	디자이너 눈으로 화면 품질 점검·수정
