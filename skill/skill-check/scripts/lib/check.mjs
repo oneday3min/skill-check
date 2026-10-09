@@ -187,7 +187,10 @@ export async function checkRepo(input, opts = {}) {
   if (ageDays < 30) repoFlags.push({ level: 'warn', text: `생긴 지 ${ageDays}일 된 저장소 — 이력이 짧음` });
   if (meta.owner && meta.owner.type === 'Organization') repoFlags.push({ level: 'good', text: `조직 계정(${meta.owner.login})이 관리` });
 
-  const list = skillFiles.slice(0, MAX_SKILLS);
+  // opts.include: 큰 저장소에서 꼭 볼 하위 폴더(앞 40개 안에 없어도 먼저 검사)
+  const inc = (opts.include || []).map(s => s.replace(/\/$/, ''));
+  const must = skillFiles.filter(f => inc.some(s => f.path.startsWith(s + '/')));
+  const list = [...must, ...skillFiles.filter(f => !must.includes(f))].slice(0, Math.max(MAX_SKILLS, must.length));
   let done = 0;
   progress(`스킬 ${list.length}개 검사 중`);
   const skills = await pool(list, CONCURRENCY, async sf => {
@@ -207,7 +210,15 @@ export async function checkRepo(input, opts = {}) {
     const lic = await licenseAt(dir);
     const fmVerdict = fm.license ? classify(fm.license) : null;
     let license, source;
-    if (lic && lic.verdict) { license = lic.verdict; source = lic.path; }
+    const ownLic = lic && dirOf(lic.path) === dir; // 스킬 폴더 바로 안의 LICENSE
+    if (ownLic && lic.verdict) { license = lic.verdict; source = lic.path; }
+    else if (fmVerdict && !/licen[cs]e\.(txt|md)|see licen|^licen[cs]e$/i.test(fm.license)) {
+      license = fmVerdict; source = `SKILL.md license 필드("${fm.license.slice(0, 60)}")`;
+      if (lic && lic.verdict && lic.verdict.id !== fmVerdict.id) {
+        flags.push({ level: 'warn', text: `SKILL.md는 "${fm.license.slice(0, 40)}", 저장소 ${lic.path}는 ${lic.verdict.id} — 서로 다름(어느 쪽이 스킬에 적용되는지 확인)` });
+      }
+    }
+    else if (lic && lic.verdict) { license = lic.verdict; source = lic.path; }
     else if (fmVerdict) { license = fmVerdict; source = 'SKILL.md license 필드'; }
     else if (repoLicenseByApi) { license = repoLicenseByApi; source = '저장소 라이선스(GitHub 표시)'; }
     else {
@@ -221,11 +232,11 @@ export async function checkRepo(input, opts = {}) {
         source = 'README 문구';
       } else { license = NONE; source = '없음'; }
     }
-    if (lic && fmVerdict && fmVerdict.id !== 'Custom' && lic.verdict && fmVerdict.id !== lic.verdict.id &&
+    if (ownLic && fmVerdict && fmVerdict.id !== 'Custom' && lic.verdict && fmVerdict.id !== lic.verdict.id &&
         !/licen[cs]e\.txt|see licen/i.test(fm.license)) {
       flags.push({ level: 'warn', text: `SKILL.md에는 ${fmVerdict.id}, LICENSE 파일은 ${lic.verdict.id} — 표기가 서로 다름` });
     }
-    if (repoLicenseByApi && license.id !== repoLicenseByApi.id) {
+    if (repoLicenseByApi && license.id !== repoLicenseByApi.id && !flags.some(f => /서로 다름/.test(f.text))) {
       flags.push({ level: 'warn', text: `저장소 전체는 ${repoLicenseByApi.id}인데 이 스킬은 ${license.id} — 스킬마다 따로 확인해야 함` });
     }
     if (lic && lic.text && license.commercial !== 'no' && !/copyright|©|\(c\)/i.test(lic.text)) {
@@ -252,7 +263,8 @@ export async function checkRepo(input, opts = {}) {
         flags.push({ level: 'info', text: `${orig.from}의 사본(원본 ${orig.license})` });
       }
     }
-    if (/reverse[- ]engineered|unofficial (web )?api|비공식 API/i.test(`${fm.description || ''}\n${md.slice(0, 4000)}`)) {
+    // 스킬이 "무엇을 하는지" 적는 description만 본다(본문의 점검 항목 설명 등은 제외)
+    if (/reverse[- ]engineered|unofficial (web )?api|비공식 API/i.test(fm.description || '')) {
       flags.push({ level: 'warn', text: '비공식(역설계) API를 씀 — 그 서비스 약관 위반·계정 정지 위험' });
     } else if (/\b(scrap(e|er|es|ing)|internal (graphql )?api)\b/i.test(fm.description || '') &&
                /\b(amazon|airbnb|ebay|etsy|taobao|tmall|walmart|linkedin|instagram|tiktok|facebook|x\.com|twitter|1688|goofish)\b/i.test(fm.description || '')) {
@@ -363,6 +375,7 @@ export function grade(license, flags, risks) {
   else if (license.commercial === 'unknown') { g = 'D'; reasons.push('라이선스 조건 미확인'); }
   else if (license.commercial === 'conditions') { g = 'C'; reasons.push(`조건부 라이선스(${license.id})`); }
   else if (license.commercial === 'readme') { g = 'C'; reasons.push('라이선스 파일 없이 README에만 허용 표기'); }
+  else if (license.commercial === 'custom') { g = 'C'; reasons.push('표준이 아닌 라이선스 — 원문 확인 필요'); }
   else { g = 'A'; reasons.push(`상업 사용 가능(${license.id})`); }
   if (high) { g = 'D'; reasons.push(`위험 신호(높음) ${high}개`); }
   else if (g !== 'D' && (med || warns)) {
