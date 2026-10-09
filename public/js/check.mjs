@@ -263,7 +263,8 @@ export async function checkRepo(input, opts = {}) {
         flags.push({ level: 'info', text: `${orig.from}의 사본(원본 ${orig.license})` });
       }
     }
-    if (/reverse[- ]engineered|unofficial (web )?api|비공식 API/i.test(`${fm.description || ''}\n${md.slice(0, 4000)}`)) {
+    // 스킬이 "무엇을 하는지" 적는 description만 본다(본문의 점검 항목 설명 등은 제외)
+    if (/reverse[- ]engineered|unofficial (web )?api|비공식 API/i.test(fm.description || '')) {
       flags.push({ level: 'warn', text: '비공식(역설계) API를 씀 — 그 서비스 약관 위반·계정 정지 위험' });
     } else if (/\b(scrap(e|er|es|ing)|internal (graphql )?api)\b/i.test(fm.description || '') &&
                /\b(amazon|airbnb|ebay|etsy|taobao|tmall|walmart|linkedin|instagram|tiktok|facebook|x\.com|twitter|1688|goofish)\b/i.test(fm.description || '')) {
