@@ -1,0 +1,22 @@
+{
+  "checked": "2026-10-09",
+  "note": "정답은 사람이 각 라이선스 원문을 직접 열어 확인한 것. expect: yes(상업 무료) / conditions(조건 있음: 카피레프트·README에만·비표준) / no(상업 불가·권리 불명)",
+  "cases": [
+    { "id": "anthropics/skills/skills/docx", "expect": "no", "why": "skills/docx/LICENSE.txt: © Anthropic, All rights reserved, 재배포·복사 금지" },
+    { "id": "anthropics/skills/skills/pdf", "expect": "no", "why": "skills/pdf/LICENSE.txt: 같은 비공개 조항" },
+    { "id": "anthropics/skills/skills/xlsx", "expect": "no", "why": "skills/xlsx/LICENSE.txt: 같은 비공개 조항" },
+    { "id": "anthropics/skills/skills/skill-creator", "expect": "yes", "why": "skills/skill-creator/LICENSE.txt: Apache-2.0" },
+    { "id": "anthropics/skills/skills/algorithmic-art", "expect": "yes", "why": "skills/algorithmic-art/LICENSE.txt: Apache-2.0" },
+    { "id": "anthropics/skills/skills/doc-coauthoring", "expect": "no", "why": "폴더·저장소에 라이선스 파일 없음, README는 '많은 스킬이 Apache 2.0'이라고만 함" },
+    { "id": "ComposioHQ/awesome-claude-skills/document-skills/docx", "expect": "no", "why": "Anthropic 비공개 docx와 같은 LICENSE.txt가 그대로 들어 있음" },
+    { "id": "ComposioHQ/awesome-claude-skills/artifacts-builder", "expect": "yes", "why": "폴더 LICENSE.txt: Apache-2.0" },
+    { "id_prefix": "deanpeters/Product-Manager-Skills/", "expect": "no", "why": "저장소 LICENSE: CC BY-NC-SA 4.0(비영리만)" },
+    { "id_prefix": "irinabuht12-oss/marketing-skills/", "expect": "conditions", "why": "라이선스 파일 없음, README에 'MIT licensed'라고만 적힘" },
+    { "id": "obra/superpowers/skills/test-driven-development", "expect": "yes", "why": "저장소 LICENSE: MIT" },
+    { "id": "addyosmani/agent-skills/skills/spec-driven-development", "expect": "yes", "why": "저장소 LICENSE: MIT" },
+    { "id": "K-Dense-AI/scientific-agent-skills/skills/biopython", "expect": "conditions", "why": "SKILL.md license: 'Biopython License Agreement'(비표준) — 저장소는 MIT" },
+    { "id": "K-Dense-AI/scientific-agent-skills/skills/depmap", "expect": "yes", "why": "SKILL.md license: CC-BY-4.0(출처 표시하면 상업 가능)" },
+    { "id_prefix": "trailofbits/skills/", "expect": "conditions", "why": "저장소 LICENSE: CC BY-SA 4.0(같은 조건 공유)" },
+    { "id_prefix": "chuspeeism/dashi-ppt-skill/", "expect": "conditions", "why": "저장소 LICENSE: AGPL-3.0" }
+  ]
+}
