@@ -70,7 +70,7 @@ function card(s) {
   if (!items.length) items.push(['good', '출처·위험 신호에서 걸린 것이 없음']);
   flags.innerHTML = items.map(([c, t]) => `<li class="${esc(c)}">${esc(t)}</li>`).join('');
 
-  // 설치는 링크를 주지 않는다(바꿔치기된 링크·피싱 방지). 주소는 글자로 보여 주고,
+  // 설치는 링크를 주지 않는다(혹시 모를 사고 예방). 주소는 글자로 보여 주고,
   // 사용자가 자기 AI(Claude Code·Codex 등)에게 "확인하고 설치해 줘"라고 붙여 넣을 문장을 준다.
   const howto = li.querySelector('.howto');
   const loc = locationOf(s);
