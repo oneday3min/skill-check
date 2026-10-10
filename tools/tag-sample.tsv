@@ -1,0 +1,61 @@
+# 손 꼬리표 표본 60개 (tag-audit.mjs --sample 60 순서) — id	다루는 것	하는 일	개발자용(dev)
+NeoLabHQ/context-engineering-kit/skills/critique	code,ai	review	dev
+alirezarezvani/claude-skills/c-level-advisor/skills/chief-of-staff		analyze
+irinabuht12-oss/marketing-skills/skills/competitor-teardown	marketing,web	analyze
+browser-act/skills/solutions/ecommerce/ecommerce-seller-info	shop,data	search
+phuryn/pm-skills/pm-go-to-market/skills/gtm-strategy	marketing	create
+JimLiu/baoyu-skills/skills/baoyu-cover-image	image	create
+coreyhaines31/marketingskills/skills/ads	marketing	create
+coreyhaines31/marketingskills/skills/aso	marketing,mobile	edit,review
+coreyhaines31/marketingskills/skills/cro	marketing,web	edit
+Leonxlnx/taste-skill/skills/soft-skill	web,image	create
+ComposioHQ/awesome-claude-skills/composio-skills/aero-workflow-automation		automate	dev
+addyosmani/agent-skills/skills/source-driven-development	code	create,review	dev
+Orchestra-Research/AI-Research-SKILLs/08-distributed-training/megatron-core	ai	create	dev
+addyosmani/agent-skills/skills/test-driven-development	code	create,review	dev
+ComposioHQ/awesome-claude-skills/composio-skills/adobe-automation	image	automate	dev
+browser-act/skills/solutions/ecommerce/amazon-bestseller-listing	shop,data	search
+K-Dense-AI/scientific-agent-skills/skills/diffdock	science	analyze
+obra/superpowers/skills/dispatching-parallel-agents	ai	automate
+alirezarezvani/claude-skills/agent-launcher/skills/agent-launcher-orchestrator	ai	create,automate
+sergebulaev/linkedin-skills/skills/linkedin-engager-analytics	marketing,data	analyze
+github/awesome-copilot/skills/acreadiness-assess	ai,code,git	review	dev
+K-Dense-AI/scientific-agent-skills/skills/dhdna-profiler	writing	analyze
+addyosmani/agent-skills/skills/planning-and-task-breakdown	email	create
+op7418/guizang-social-card-skill/(root)	image,marketing	create
+wshobson/agents/plugins/agent-teams/skills/team-composition-patterns	ai	create
+github/awesome-copilot/skills/appinsights-instrumentation	web,cloud	ops	dev
+addyosmani/agent-skills/skills/shipping-and-launch	cloud	review,ops	dev
+wshobson/agents/plugins/accessibility-compliance/skills/screen-reader-testing	web	review	dev
+irinabuht12-oss/marketing-skills/skills/competitor-creative-analysis	marketing	analyze
+sickn33/agentic-awesome-skills/skills/admin-access-register	security,sheet	create
+Jeffallan/claude-skills/skills/legacy-modernizer	code	edit	dev
+browser-act/skills/solutions/ecommerce/goofish-item-detail	shop	search
+coreyhaines31/marketingskills/skills/pricing	finance,marketing	analyze
+deanpeters/Product-Manager-Skills/skills/competitive-research-snapshot	marketing,research	search,analyze
+phuryn/pm-skills/pm-execution/skills/release-notes	docs,writing	create
+alirezarezvani/claude-skills/c-level-advisor/skills/ciso-advisor	security,legal	analyze
+irinabuht12-oss/marketing-skills/skills/citation-source-gap-finder	marketing	search,analyze
+trailofbits/skills/plugins/dwarf-expert/skills/dwarf-expert	code	analyze	dev
+coreyhaines31/marketingskills/skills/competitor-profiling	marketing	search,analyze
+irinabuht12-oss/marketing-skills/skills/email-sequence-writer	email,writing,marketing	create
+garrytan/gstack/document-generate	docs	create	dev
+nidhinjs/prompt-master/(root)	ai	create,edit
+Jeffallan/claude-skills/skills/embedded-systems	code	create	dev
+irinabuht12-oss/marketing-skills/skills/content-aeo-optimizer	writing,marketing	edit
+ComposioHQ/awesome-claude-skills/composio-skills/agentql-automation		automate	dev
+trailofbits/skills/plugins/audit-context-building/skills/audit-context-building	security,code	analyze	dev
+irinabuht12-oss/marketing-skills/skills/conversion-path-analysis	marketing,data	analyze
+NeoLabHQ/context-engineering-kit/skills/actualize	git	edit	dev
+phuryn/pm-skills/pm-marketing-growth/skills/north-star-metric	data	create
+phuryn/pm-skills/pm-execution/skills/create-prd	docs	create
+browser-act/skills/solutions/ecommerce/ebay-item-detail	shop	search
+sickn33/agentic-awesome-skills/skills/access-matrix	security,sheet	create
+Jeffallan/claude-skills/skills/feature-forge	docs	create
+irinabuht12-oss/marketing-skills/skills/google-ads-audit	marketing	analyze,review
+phuryn/pm-skills/pm-go-to-market/skills/growth-loops	marketing	analyze
+K-Dense-AI/scientific-agent-skills/skills/deepspot-m	science,image	analyze
+NeoLabHQ/context-engineering-kit/skills/create-pr	git	create	dev
+Leonxlnx/taste-skill/skills/gpt-tasteskill	web	create	dev
+googleworkspace/cli/skills/gws-events	email	automate	dev
+sickn33/agentic-awesome-skills/skills/ab-test-setup	data,marketing	create
