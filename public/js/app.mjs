@@ -1,4 +1,5 @@
 import { checkRepo, parseUrl } from './check.mjs';
+import { initQuiz } from './quiz.mjs';
 
 const $ = s => document.querySelector(s);
 const GRADES = ['A', 'B', 'C', 'D'];
@@ -14,6 +15,7 @@ const DUTY = {
 };
 
 let catalog = { skills: [], repos: [] };
+let quiz = null;
 const state = { q: '', cat: '전체', grades: new Set(['A', 'B']), sort: 'grade', shown: PAGE };
 
 const store = {
@@ -27,7 +29,10 @@ const fmtStars = n => (n >= 1000 ? `${(n / 1000).toFixed(n >= 10000 ? 0 : 1)}k` 
 // ---------- 탭 ----------
 function showTab(name) {
   document.querySelectorAll('.tabs button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === name)));
-  for (const t of ['list', 'check', 'about']) $(`#tab-${t}`).hidden = t !== name;
+  for (const t of ['list', 'quiz', 'check', 'about']) $(`#tab-${t}`).hidden = t !== name;
+  // 진단 중에는 맨 위 소개를 접어 질문에 집중
+  $('.hero').hidden = name === 'quiz';
+  if (name === 'quiz' && quiz) quiz.start();
 }
 document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => {
   showTab(b.dataset.tab);
@@ -202,14 +207,21 @@ $('#overview').addEventListener('click', e => {
     $('#cats').querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.cat === state.cat)));
     setView('all'); renderList(); $('#all-view').scrollIntoView({ block: 'start' });
   } else if (open) {
-    const s = catalog.skills.find(x => x.id === open.dataset.open);
-    state.cat = '전체'; state.q = s.name; $('#q').value = s.name; state.shown = PAGE;
-    $('#cats').querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.cat === '전체')));
-    setView('all'); renderList();
-    const li = [...document.querySelectorAll('#cards .card')].find(x => x.dataset.id === s.id);
-    if (li) { li.querySelector('details').open = true; li.scrollIntoView({ block: 'center' }); }
+    openSkill(open.dataset.open);
   }
 });
+
+// 목록에서 스킬 하나를 찾아 펼친다(용도별 상자·진단 결과에서 씀)
+function openSkill(id) {
+  const s = catalog.skills.find(x => x.id === id);
+  if (!s) return;
+  showTab('list'); history.replaceState(null, '', location.pathname);
+  state.cat = '전체'; state.q = s.name; $('#q').value = s.name; state.shown = PAGE;
+  $('#cats').querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.cat === '전체')));
+  setView('all'); renderList();
+  const li = [...document.querySelectorAll('#cards .card')].find(x => x.dataset.id === s.id);
+  if (li) { li.querySelector('details').open = true; li.scrollIntoView({ block: 'center' }); }
+}
 
 $('#q').addEventListener('input', e => { state.q = e.target.value; state.shown = PAGE; renderList(); });
 $('#sort').addEventListener('change', e => { state.sort = e.target.value; renderList(); });
@@ -268,7 +280,8 @@ document.querySelectorAll('[data-ex]').forEach(b => b.addEventListener('click', 
 function route() {
   const h = decodeURIComponent(location.hash.slice(1));
   if (h.startsWith('check=')) { showTab('check'); $('#url').value = h.slice(6); runCheck(h.slice(6)); }
-  else if (h === 'check' || h === 'about') showTab(h);
+  else if (h.startsWith('quiz=')) { showTab('quiz'); quiz.fromHash(h.slice(5)); }
+  else if (h === 'check' || h === 'about' || h === 'quiz') showTab(h);
   else showTab('list');
 }
 
@@ -279,6 +292,11 @@ function route() {
   } catch {
     $('#count').textContent = '추천 목록을 불러오지 못했어요. 새로고침해 주세요.';
   }
+  quiz = initQuiz({
+    skills: catalog.skills, root: $('#quiz'), onOpen: openSkill,
+    onRoute: h => history.replaceState(null, '', `#${h}`),
+  });
+  $('#quiz-cta').addEventListener('click', () => { showTab('quiz'); history.replaceState(null, '', '#quiz'); scrollTo(0, 0); });
   renderStats();
   renderFilters();
   renderOverview();
