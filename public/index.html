@@ -18,6 +18,7 @@
   <a class="logo" href="../">ONEDAY</a>
   <nav class="tabs" role="tablist">
     <button role="tab" data-tab="list" aria-selected="true">추천 목록</button>
+    <button role="tab" data-tab="quiz" aria-selected="false">스킬 진단</button>
     <button role="tab" data-tab="check" aria-selected="false">직접 검사</button>
     <button role="tab" data-tab="about" aria-selected="false">등급 기준</button>
   </nav>
@@ -30,6 +31,12 @@
     <p class="lede">AI 스킬(SKILL.md)마다 <b>상업적으로 무료로 써도 되는지</b>, <b>출처가 깨끗한지</b>, <b>위험한 명령이 있는지</b> 검사해 등급을 매겼습니다.</p>
     <div class="stats" id="stats"></div>
     <p class="finding" id="finding"></p>
+    <button type="button" class="cta" id="quiz-cta"><b>3분 스킬 진단</b><span>질문에 답하면 나에게 맞는 스킬 세트를 골라 드려요 →</span></button>
+  </section>
+
+  <!-- 스킬 진단 -->
+  <section id="tab-quiz" class="panel" hidden>
+    <div id="quiz" class="quiz"></div>
   </section>
 
   <!-- 추천 목록 -->
