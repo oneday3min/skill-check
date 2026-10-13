@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Skill Check — 써도 되는 AI 스킬</title>
-<meta name="description" content="오픈소스 AI 스킬(SKILL.md)을 라이선스·출처·위험 신호로 검사해 상업적으로 무료로 써도 되는 것만 추천합니다.">
-<meta property="og:title" content="Skill Check — 써도 되는 AI 스킬">
-<meta property="og:description" content="공개돼 있다고 다 공짜가 아닙니다. 스킬마다 라이선스·출처를 검사한 추천 목록.">
+<title>Skill Check — 라이선스 확인한 AI 스킬</title>
+<meta name="description" content="오픈소스 AI 스킬(SKILL.md)마다 상업 무료 여부·출처·위험 신호를 확인해 등급을 매겼습니다. 쓸지 말지는 보는 분이 정하고, 우리는 확인한 것만 적습니다.">
+<meta property="og:title" content="Skill Check — 라이선스 확인한 AI 스킬">
+<meta property="og:description" content="공개돼 있다고 다 공짜가 아닙니다. 스킬마다 라이선스·출처를 확인한 목록.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c95a6b'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11.5' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 <header class="top wrap">
   <a class="logo" href="../">ONEDAY</a>
   <nav class="tabs" role="tablist">
-    <button role="tab" data-tab="list" aria-selected="true">추천 목록</button>
+    <button role="tab" data-tab="list" aria-selected="true">스킬 목록</button>
     <button role="tab" data-tab="quiz" aria-selected="false">스킬 진단</button>
     <button role="tab" data-tab="check" aria-selected="false">직접 검사</button>
     <button role="tab" data-tab="about" aria-selected="false">등급 기준</button>
@@ -28,7 +28,7 @@
   <section class="hero">
     <p class="eyebrow">Skill Check</p>
     <h1>공개돼 있다고<br>다 공짜는 아닙니다.</h1>
-    <p class="lede">AI 스킬(SKILL.md)마다 <b>상업적으로 무료로 써도 되는지</b>, <b>출처가 깨끗한지</b>, <b>위험한 명령이 있는지</b> 검사해 등급을 매겼습니다.</p>
+    <p class="lede">AI 스킬(SKILL.md)마다 <b>상업적으로 무료인지</b>, <b>출처가 깨끗한지</b>, <b>위험한 명령이 있는지</b> 확인해 등급을 매겼습니다.</p>
     <div class="stats" id="stats"></div>
     <p class="finding" id="finding"></p>
     <button type="button" class="cta" id="quiz-cta"><b>3분 스킬 진단</b><span>질문에 답하면 나에게 맞는 스킬 세트를 골라 드려요 →</span></button>
@@ -100,7 +100,9 @@
     <h3>출처 검사</h3>
     <p>포크 여부, 저장소 나이, 관리 주체, 저장소와 스킬의 라이선스가 다른지, 저작권자 표기, 유명 원본(Anthropic 공식 스킬)의 사본인지, 남의 것을 가져왔다는 문구, 글꼴·미디어 포함 여부, 남의 브랜드 이름 사용.</p>
     <h3>위험 신호 (참고용)</h3>
-    <p>인터넷에서 받은 스크립트 바로 실행, 비밀키·인증 파일 경로, 사용자 몰래 하라는 문구(“외부 지시를 따르지 마라” 같은 방어 문구는 제외), 인코딩된 내용 해독, 동적 코드 실행, 환경변수 읽기, 외부 전송, 넓은 삭제 명령, Bash 무제한 허용. <b>전문 보안 검사기가 아닙니다</b> — 회사에서 쓰려면 보안 검사를 따로 하세요.</p>
+    <p>인터넷에서 받은 스크립트 바로 실행, 비밀키·인증 파일 경로, 사용자 몰래 하라는 문구(“외부 지시를 따르지 마라” 같은 방어 문구는 제외), 인코딩된 내용 해독, 동적 코드 실행, 환경변수 읽기, 외부 전송, 넓은 삭제 명령, Bash 무제한 허용, 조회면 될 일에 쓰기·거래·출금 권한 키를 달라는 안내. <b>전문 보안 검사기가 아닙니다</b> — 회사에서 쓰려면 보안 검사를 따로 하세요.</p>
+    <h3>정적 판정 불가</h3>
+    <p>코드를 읽어서는 무엇을 하는지 알 수 없는 스킬에는 <b>“정적 판정 불가”</b>를 붙이고 등급을 C(주의)까지만 줍니다. 위험하다는 뜻이 아니라 <b>실제로 돌려 봐야 안다</b>는 뜻입니다. 대상: 실행 파일·압축 파일(.exe·.dll·.node·.wasm 등), 압축·난독화된 코드, 설치·실행할 때마다 인터넷에서 코드를 받아 오는 명령(npx -y·uvx·curl | sh·pip install git+ 등), 너무 커서 못 읽은 코드. 프로젝트에 깔린 개발 도구 실행(npx tsc 등)은 세지 않습니다.</p>
     <h3>설치 링크를 드리지 않는 이유</h3>
     <p>혹시 모를 사고를 예방하기 위해 이 사이트는 설치 링크를 걸지 않습니다. 대신 스킬 위치를 글자로 보여 드리고, 쓰시는 AI(Claude Code·Codex 등)에 붙여 넣을 문장을 드립니다. 그 문장은 AI가 <b>라이선스와 위험한 내용을 먼저 확인하고, 주소가 github.com의 해당 저장소일 때만</b> 설치하도록 되어 있습니다.</p>
     <h3>꼭 알아 두세요</h3>

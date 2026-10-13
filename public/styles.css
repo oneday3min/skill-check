@@ -110,6 +110,7 @@ details[open] .row-sum{background:var(--bg)}
 .flags .risk-low::before{content:"△";color:var(--mute)}
 .flags .risk-medium::before{content:"▲";color:var(--gC)}
 .flags .risk-high::before{content:"⛔"}
+.flags .opaque::before{content:"?";color:var(--gC);font-weight:700}
 .howto{background:var(--bg);border-radius:10px;padding:10px 12px;margin-top:6px}
 .howto p{margin:0 0 6px}
 .howto p:last-child{margin:0}
