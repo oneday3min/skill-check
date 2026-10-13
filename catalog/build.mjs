@@ -27,9 +27,13 @@ const withKo = s => { const k = koOf(s); return { ...s, category: (k && k.cat) |
 
 // 이어서 만들기: 이미 검사한 저장소는 건너뛴다(--refresh면 전부 다시)
 const outPath = new URL('../public/catalog.json', here);
-const prev = existsSync(outPath) && !process.argv.includes('--refresh') ? JSON.parse(readFileSync(outPath, 'utf8')) : { repos: [], skills: [] };
+// --refresh여도 이전 결과는 읽어 둔다: 한도·오류로 못 본 저장소를 이전 결과로 채우기 위해
+const prev = existsSync(outPath) ? JSON.parse(readFileSync(outPath, 'utf8')) : { repos: [], skills: [] };
 const out = { built_at: new Date().toISOString(), repos: [], skills: [] };
-const done = new Set(prev.repos.map(r => r.full_name.toLowerCase()));
+// --older=2026-10-13T15:00 : 그 시각보다 전에 검사한 저장소만 다시(한도 때문에 나눠 돌릴 때)
+const olderArg = (process.argv.find(a => a.startsWith('--older=')) || '').slice(8);
+const done = new Set(process.argv.includes('--refresh') ? []
+  : prev.repos.filter(r => !olderArg || (r.checked && r.checked >= olderArg)).map(r => r.full_name.toLowerCase()));
 let limited = false;
 for (const r of repos) {
   if (done.has(r.toLowerCase())) {
@@ -37,10 +41,16 @@ for (const r of repos) {
     out.skills.push(...prev.skills.filter(s => s.repo.toLowerCase() === r.toLowerCase()).map(withKo));
     continue;
   }
-  if (limited) { console.log(`${r}: 건너뜀(한도) — 다음 실행 때`); continue; }
+  if (limited) {
+    // 한도에 걸려 못 본 저장소는 이전 결과를 그대로 남긴다(목록에서 사라지지 않게)
+    const old = prev.repos.find(x => x.full_name.toLowerCase() === r.toLowerCase());
+    if (old) { out.repos.push(old); out.skills.push(...prev.skills.filter(s => s.repo.toLowerCase() === r.toLowerCase()).map(withKo)); }
+    console.log(`${r}: 건너뜀(한도)${old ? ' — 이전 결과 유지' : ''} — 다음 실행 때`);
+    continue;
+  }
   try {
     const res = await checkRepo(r, { include: include[r.toLowerCase()] });
-    out.repos.push({ ...res.repo, flags: res.repoFlags, total_skills: res.total_skills, truncated: res.truncated });
+    out.repos.push({ ...res.repo, flags: res.repoFlags, total_skills: res.total_skills, truncated: res.truncated, checked: res.checked_at });
     for (const s of res.skills) {
       const id = `${res.repo.full_name}/${s.path}`;
       out.skills.push(withKo({ id, repo: res.repo.full_name, stars: res.repo.stars, ...s }));
@@ -49,6 +59,8 @@ for (const r of repos) {
     console.log(`${res.repo.full_name}: ${res.skills.length}/${res.total_skills}  ${JSON.stringify(g)}`);
   } catch (e) {
     console.log(`${r}: 실패 — ${e.message}`);
+    const old = prev.repos.find(x => x.full_name.toLowerCase() === r.toLowerCase());
+    if (old) { out.repos.push(old); out.skills.push(...prev.skills.filter(s => s.repo.toLowerCase() === r.toLowerCase()).map(withKo)); }
     if (/한도/.test(e.message)) limited = true;
   }
 }
