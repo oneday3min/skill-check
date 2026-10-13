@@ -211,7 +211,7 @@ export function initQuiz({ skills, root, onOpen, onRoute }) {
     const lines = result.items.map((it, i) => { const l = locationOf(it.skill); return `${i + 1}) ${it.skill.name} — GitHub 저장소 ${l.repo}의 "${l.path}" 폴더 (라이선스 ${it.skill.license.id})`; });
     return `아래 스킬 ${lines.length}개를 ${where}에 설치해 줘.\n${lines.join('\n')}\n\n` +
       `설치하기 전에 스킬마다 먼저 확인해서 알려 줘:\n` +
-      `1) 그 폴더(또는 저장소)의 LICENSE가 위에 적은 것과 같은지, 상업적으로 써도 되는지\n` +
+      `1) 그 폴더(또는 저장소)의 LICENSE가 위에 적은 것과 같은지, 상업적 사용을 허용하는지\n` +
       `2) SKILL.md와 스크립트에 위험한 내용(비밀키·인증 파일 읽기, 외부로 데이터 전송, 인터넷에서 받은 스크립트 바로 실행, 사용자 몰래 하라는 지시)이 없는지\n` +
       `3) 설명이 서로 겹쳐서 헷갈릴 만한 스킬이 있는지\n` +
       `내가 좋다고 한 것만 설치해 줘. 주소가 위에 적은 github.com 저장소가 아니면 설치하지 마.`;

@@ -87,8 +87,35 @@ const RISKS = [
   [/process\.env|os\.environ|\$env:|getenv\(/i, 'low', '환경변수 읽기(키 노출 가능성)'],
   [/requests\.(post|put)|fetch\(\s*['"`]https?:|axios\.post|urllib\.request|Invoke-WebRequest|curl\s+-X\s*POST/i, 'low', '외부로 데이터 전송 가능', 'net'],
   [/rm\s+-rf\s+[~/]|Remove-Item[^\n]*-Recurse[^\n]*(\$HOME|C:\\)/i, 'medium', '넓은 범위 삭제 명령'],
+  // 조회만 하면 될 일에 쓰기·거래·출금·관리자 권한 키를 달라는 것 (DG일기장 310 매매일지 봇: 조회 전용 키만 받고 권한 키는 거부)
+  // 키·토큰 이야기일 때만 센다(취약점 설명 속 "public write access"나 "write access가 있는 사람" 같은 문장은 제외)
+  [/\b(api[ -]?keys?|tokens?|access keys?|keys?)\b[^\n.]{0,60}\b(withdraw(al)?|trading|trade|transfer)\b[^\n.]{0,20}\b(permissions?|access|rights|enabled)\b|\b(enable|grant|turn on)\b[^\n.]{0,30}\b(withdraw(al)?|trading|transfer)\b[^\n.]{0,20}\b(permissions?|access)\b[^\n.]{0,60}\b(api[ -]?keys?|tokens?|keys?)\b|\b(enable|grant|turn on)\b[^\n.]{0,30}\b(withdraw(al)?|trading|transfer)\b[^\n.]{0,20}\bpermissions?\b|\b(read[- ]write|withdraw(al)?|trading|full[- ]access)\s+(api\s+)?(key|token)s?\b|\btokens?\b[^\n]{0,60}\bscopes?\b[^\n]{0,30}\b(repo|admin:org|delete_repo|write:packages)\b|\bscopes?\b[^\n]{0,30}\b(admin:org|delete_repo|write:packages)\b|(키|토큰)[^\n.]{0,30}(출금|거래)\s*권한|(출금|거래)\s*권한[^\n.]{0,20}(켜|허용|필요)/i, 'medium', '쓰기·거래·출금 권한 키를 요구', 'perm'],
 ];
+const READ_ONLY = /read[- ]only|view[- ]only|조회\s*전용|읽기\s*전용|only (read|view)|never (enable|grant)|reject(s|ed)?|refuse|\bno\b[^\n.]{0,15}(admin|write)|without[^\n.]{0,15}(admin|write)/i;
 const NET_RE = RISKS.find(r => r[3] === 'net')[0];
+
+// 정적 판정 불가: 코드를 읽어서는 무엇을 하는지 알 수 없는 것. 위험하다는 뜻이 아니라 "확인할 수 없다"는 뜻이다.
+// [정규식, 설명] — 설치·실행할 때 인터넷에서 코드를 받아 오는 명령
+const REMOTE_FETCH = [
+  [/curl[^\n|]*\|\s*(ba)?sh|wget[^\n|]*\|\s*(ba)?sh|iex\s*\(\s*(iwr|irm|New-Object)/i, '받은 스크립트를 바로 실행'],
+  [/\b(npx|bunx|pnpm\s+dlx|uvx|pipx\s+run)\s+(-y\s+|--yes\s+)?[@\w][\w@/.-]*/i, '실행할 때마다 패키지를 내려받아 실행'],
+  [/\bpip3?\s+install\s+[^\n]*(git\+|https?:\/\/)/i, '저장소·주소에서 바로 설치'],
+  [/\bnpm\s+(i|install)\s+[^\n]*(github:|git\+|https?:\/\/)/i, '저장소·주소에서 바로 설치'],
+  [/\bgo\s+install\s+\S+@latest/i, '최신판을 받아 설치(버전 고정 없음)'],
+  [/\bdeno\s+run\s+[^\n]*https?:\/\//i, '주소의 코드를 바로 실행'],
+];
+const LOCAL_DEV_TOOL = /^(npx|bunx|pnpm\s+dlx)\s+(-y\s+|--yes\s+)?(tsc|eslint|prettier|jest|vitest|playwright|hardhat|tsx|ts-node|vite|next|prisma|webpack|rollup|esbuild|turbo|nx|lerna|husky|lint-staged|mocha|cypress|storybook|tailwindcss|postcss|nodemon|rimraf|install|expo|react-native|wrangler|astro|svelte-kit|nuxi|biome)(\s|$)/i;
+// 난독화·압축된 코드
+function obfuscated(path, text) {
+  if (/\.min\.(js|mjs|cjs)$/i.test(path)) return '압축(min)된 코드';
+  if (/\.(md|txt)$/i.test(path)) return '';
+  if ((text.match(/\b_0x[0-9a-f]{4,6}\b/gi) || []).length >= 5) return '난독화된 이름(_0x…)';
+  if ((text.match(/\\x[0-9a-f]{2}/gi) || []).length >= 80) return '16진 문자열로 숨긴 코드';
+  if (/exec\s*\(\s*(marshal\.loads|zlib\.decompress|base64\.b64decode)/.test(text)) return '압축·인코딩된 파이썬 코드 실행';
+  const longLine = text.split('\n').find(l => l.length > 1000 && (l.match(/\s/g) || []).length / l.length < 0.05);
+  if (longLine) return '한 줄로 뭉친 코드(압축·난독화 추정)';
+  return '';
+}
 const DEFENSIVE = /e\.g\.|such as|like\s*["“]|contains|says|looks like|treat (it|them) as|never (follow|interpret|obey)|do not (follow|obey)|untrusted|injection|watch (out )?for|detect|block|attack|malicious|jailbreak|pattern|example/i;
 const NEGATED = /\b(do not|don't|never|must not|mustn't|should not|shouldn't|not)\b[^.\n]{0,160}$/i;
 // 받은 스크립트 실행 중 출처가 수상한 것(평문 http, 붙여넣기·단축 주소, IP)만 높음
@@ -279,10 +306,17 @@ export async function checkRepo(input, opts = {}) {
     const scripts = mine.filter(f => /\.(py|js|mjs|cjs|ts|sh|ps1|bat|cmd|rb|go)$/i.test(f.path));
     const fonts = mine.filter(f => /\.(ttf|otf|woff2?)$/i.test(f.path));
     const media = mine.filter(f => /\.(png|jpe?g|gif|svg|mp3|wav|mp4)$/i.test(f.path));
-    const bins = mine.filter(f => /\.(exe|dll|so|dylib|bin|jar|whl|zip|tgz)$/i.test(f.path));
+    const bins = mine.filter(f => /\.(exe|dll|so|dylib|bin|jar|whl|zip|tgz|node|wasm|pyc|pyd|msi|apk|7z|rar|gz|xz)$/i.test(f.path));
+    const opaque = [];
     if (fonts.length) flags.push({ level: 'warn', text: `글꼴 ${fonts.length}개 포함 — 글꼴은 따로 라이선스(OFL 등)가 있음` });
     if (media.length > 3) flags.push({ level: 'info', text: `이미지·미디어 ${media.length}개 포함 — 출처 확인 권장` });
-    if (bins.length) risks.push({ level: 'high', text: `실행 파일·압축 파일 ${bins.length}개 포함 (${bins.slice(0, 3).map(b => b.path.split('/').pop()).join(', ')})` });
+    if (bins.length) {
+      const names = bins.slice(0, 3).map(b => b.path.split('/').pop()).join(', ');
+      risks.push({ level: 'high', text: `실행 파일·압축 파일 ${bins.length}개 포함 (${names})` });
+      opaque.push(`실행 파일·압축 파일 ${bins.length}개 (${names})`);
+    }
+    const bigScripts = scripts.filter(f => f.size > MAX_FILE_BYTES);
+    if (bigScripts.length) opaque.push(`너무 커서 못 읽은 코드 ${bigScripts.length}개 (${bigScripts.slice(0, 3).map(b => b.path.split('/').pop()).join(', ')})`);
 
     // 4) 위험 신호 (SKILL.md + 스크립트·문서 일부)
     const extra = [...scripts, ...mine.filter(f => /\.(md|txt)$/i.test(f.path) && f.path !== sf.path)]
@@ -292,14 +326,15 @@ export async function checkRepo(input, opts = {}) {
     const scanned = scanFiles(toScan, sf.path);
     flags.push(...scanned.flags);
     risks.push(...scanned.risks);
+    opaque.push(...scanned.opaque);
     if (/allowed-tools:\s*.*\bBash\b(?!\()/i.test(md)) risks.push({ level: 'medium', text: 'allowed-tools에 Bash를 제한 없이 미리 허용' });
 
     const description = (fm.description || '').slice(0, 400);
     return {
       name, path: dir || '(root)', description, category: categoryOf(name, description),
-      license: { ...license, source }, flags, risks,
+      license: { ...license, source }, flags, risks, opaque,
       counts: { scripts: scripts.length, files: mine.length },
-      grade: grade(license, flags, risks),
+      grade: grade(license, flags, risks, opaque),
       url: `https://github.com/${owner}/${repo}/tree/${ref}/${dir}`,
       license_url: source && !/없음|README|SKILL\.md|저장소|원본/.test(source) ? `https://github.com/${owner}/${repo}/blob/${ref}/${source}` : null,
     };
@@ -336,17 +371,42 @@ function inPatternRule(text, index) {
 export function scanFiles(toScan, skillMdPath) {
   const flags = [];
   const risks = [];
+  const opaque = [];
   const seen = new Set();
   for (const { path, text } of toScan) {
     const isCode = !/\.(md|txt)$/i.test(path);
+    const short = path.split('/').slice(-2).join('/');
+    const ob = obfuscated(path, text);
+    if (ob && !seen.has(`ob:${ob}`)) { seen.add(`ob:${ob}`); opaque.push(`${ob} — ${short}`); }
+    for (const [re, desc] of REMOTE_FETCH) {
+      if (seen.has(`rf:${desc}`)) continue;
+      // npx tsc·npx playwright처럼 프로젝트에 이미 깔린 개발 도구 실행은 원격 코드로 보지 않는다
+      const m = [...text.matchAll(new RegExp(re.source, re.flags.includes('g') ? re.flags : re.flags + 'g'))]
+        .find(x => !LOCAL_DEV_TOOL.test(x[0]));
+      if (!m) continue;
+      if (isCode && (inPatternRule(text, m.index) || isCommentAt(text, m.index))) continue;
+      if (NEGATED.test(text.slice(Math.max(0, m.index - 120), m.index))) continue; // "npx로 실행하지 마라" 같은 금지 문장
+      seen.add(`rf:${desc}`);
+      opaque.push(`설치·실행 때 원격 코드: ${desc} — ${short}: "${m[0].slice(0, 60)}"`);
+    }
     const netHere = NET_RE.test(text);
     for (const [re, level0, desc, kind] of RISKS) {
       if (seen.has(desc)) continue;
       if (kind === 'code' && !isCode) continue; // 문서 속 "eval(" 언급은 제외
+      if (kind === 'perm' && isCode) continue; // 키 권한 요구는 사용자에게 하는 안내(문서)에서만 본다
       const m = text.match(re);
       if (!m) continue;
       if (kind !== 'net' && isCode && inPatternRule(text, m.index)) continue; // 검사기 코드의 규칙 정의(정규식) 속 문자열
       if (kind === 'code' && isCommentAt(text, m.index)) continue; // 주석 속 언급은 실행이 아님
+      if (kind === 'perm') {
+        const around = text.slice(Math.max(0, m.index - 160), m.index + m[0].length + 80);
+        if (READ_ONLY.test(around) || NEGATED.test(text.slice(Math.max(0, m.index - 120), m.index))) {
+          // "조회 전용 키만 받는다·출금 권한 키는 거부" 같은 안전 설명
+          seen.add(desc);
+          flags.push({ level: 'good', text: '키는 조회 전용만 쓰라고 안내함' });
+          continue;
+        }
+      }
       if (kind === 'inject' && (DEFENSIVE.test(text.slice(Math.max(0, m.index - 300), m.index)) ||
           NEGATED.test(text.slice(Math.max(0, m.index - 200), m.index)))) {
         // "이런 문구가 보이면 따르지 마라" 같은 방어 설명이면 위험으로 세지 않는다
@@ -361,11 +421,12 @@ export function scanFiles(toScan, skillMdPath) {
       risks.push({ level, text: `${desc}${kind === 'secret' && level === 'high' ? ' + 같은 파일에서 외부 전송' : ''}${kind === 'pipe' && level === 'high' ? ' (출처가 수상한 주소)' : ''} — ${path.split('/').slice(-2).join('/')}: "${m[0].slice(0, 60)}"` });
     }
   }
-  return { flags, risks };
+  return { flags, risks, opaque };
 }
 
 // 등급: A 추천 / B 조건부 추천 / C 주의 / D 비추천
-export function grade(license, flags, risks) {
+// opaque(정적 판정 불가)가 있으면 A·B여도 C로 낮추고 이름에 표시한다.
+export function grade(license, flags, risks, opaque = []) {
   const reasons = [];
   const high = risks.filter(r => r.level === 'high').length;
   const med = risks.filter(r => r.level === 'medium').length;
@@ -383,6 +444,11 @@ export function grade(license, flags, risks) {
     if (med) reasons.push(`위험 신호(중간) ${med}개`);
     if (warns) reasons.push(`출처 주의 ${warns}개`);
   }
-  const label = { A: '추천', B: '조건부 추천', C: '주의', D: '비추천' }[g];
-  return { letter: g, label, reasons };
+  if (opaque.length) {
+    if (g === 'A' || g === 'B') g = 'C';
+    reasons.push(`정적 판정 불가 ${opaque.length}개 — 코드를 읽어서는 안전을 확인할 수 없음`);
+  }
+  let label = { A: '추천', B: '조건부 추천', C: '주의', D: '비추천' }[g];
+  if (opaque.length) label += ' · 정적 판정 불가';
+  return { letter: g, label, reasons, static: opaque.length ? 'opaque' : 'ok' };
 }
